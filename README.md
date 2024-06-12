@@ -1,6 +1,14 @@
 # PodCastReader
 边听播客边显示字幕。
 
+## 截图
+### 默认
+![demo](./readme/demo.gif)
+
+### 配合kiss-translator使用
+![demowithkiss](./readme/demowithkiss.gif)
+
+
 ## 前端
 ### 📦 安装
 
