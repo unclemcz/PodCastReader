@@ -182,6 +182,7 @@ async function  onPodlistClick(value){
       }
     }})
     //解析feed
+    feed.entries=feed.entries.slice(0, 100);
     feed.entries.forEach(element => {
       //console.log(element);
       if (element.link.toLowerCase().endsWith('.mp3')) {
