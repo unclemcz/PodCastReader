@@ -103,8 +103,6 @@
               </div>
             </v-sheet>
           </v-col>
-
-
         </v-row>
       </v-container>
     </v-main>
@@ -127,7 +125,9 @@ import {parseOPML} from '@/utils/opml'
 import { extractFromXml } from '@extractus/feed-extractor'
 import CryptoJS from 'crypto-js';
 
-import { ref,nextTick,onMounted } from 'vue'
+import { ref,nextTick } from 'vue'
+
+
 const audioElement = ref(null);
 
 let podlist = ref([])
@@ -264,6 +264,9 @@ function handleTimeUpdate() {
     if (currentSubtitle) {
         //滚动到对应字幕
         document.getElementById(`sub${currentSubtitle.start}`).scrollIntoView();
+        document.querySelectorAll('blockquote').forEach(blockquote => {
+          blockquote.classList.remove('bold-text');
+        })
         document.getElementById(`subtitle${currentSubtitle.start}`).classList.add('bold-text');
     } else {
         console.log('当前时间: ' + currentTime + ', 无字幕显示');

@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><channel><title>Accidental Tech Podcast</title><description>Three nerds discussing tech, Apple, programming, and loosely related matters.</description><itunes:author>Marco Arment, Casey Liss, John Siracusa</itunes:author><itunes:subtitle>Three nerds discussing tech, Apple, programming, and loosely related matters.</itunes:subtitle><link>https://atp.fm/</link><language>en</language><lastBuildDate>Thu, 06 Jun 2024 20:24:11 +0000</lastBuildDate><itunes:category text="Technology"/><itunes:image href="https://cdn.atp.fm/artwork"/><itunes:explicit>false</itunes:explicit><itunes:owner><itunes:name>Marco Arment</itunes:name><itunes:email>atp@marco.org</itunes:email></itunes:owner><copyright>Copyright 2013–2024 Accidental Tech Podcast</copyright><itunes:copyright>Copyright 2013–2024 Accidental Tech Podcast</itunes:copyright><item><guid isPermaLink="false">n05xlw1jn1htsnlq</guid><pubDate>Thu, 06 Jun 2024 20:24:11 +0000</pubDate><title>590: Buy Your Car an iPhone</title><itunes:title>Buy Your Car an iPhone</itunes:title><itunes:episode>590</itunes:episode><itunes:author>ATP</itunes:author><itunes:duration>02:37:00</itunes:duration><enclosure url="https://traffic.libsyn.com/atpfm/atp590.mp3" length="150795174" type="audio/mpeg"/><link>https://atp.fm/590</link><description><![CDATA[<ul>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><channel><title>Accidental Tech Podcast</title><description>Three nerds discussing tech, Apple, programming, and loosely related matters.</description><itunes:author>Marco Arment, Casey Liss, John Siracusa</itunes:author><itunes:subtitle>Three nerds discussing tech, Apple, programming, and loosely related matters.</itunes:subtitle><link>https://atp.fm/</link><language>en</language><lastBuildDate>Wed, 12 Jun 2024 16:45:16 +0000</lastBuildDate><itunes:category text="Technology"/><itunes:image href="https://cdn.atp.fm/artwork"/><itunes:explicit>false</itunes:explicit><itunes:owner><itunes:name>Marco Arment</itunes:name><itunes:email>atp@marco.org</itunes:email></itunes:owner><copyright>Copyright 2013–2024 Accidental Tech Podcast</copyright><itunes:copyright>Copyright 2013–2024 Accidental Tech Podcast</itunes:copyright><item><guid isPermaLink="false">rzjqtnnmlu14yu9n</guid><pubDate>Wed, 12 Jun 2024 16:45:16 +0000</pubDate><title>ATP Interview: Holly Borla &amp; Ben Cohen</title><itunes:title>ATP Interview: Holly Borla &amp; Ben Cohen</itunes:title><itunes:author>ATP</itunes:author><itunes:duration>01:00:08</itunes:duration><enclosure url="https://traffic.libsyn.com/atpfm/atpinterview1.mp3" length="57732365" type="audio/mpeg"/><link>https://atp.fm/atp-interview-holly-borla-ben-cohen</link><description><![CDATA[<ul>
+<li>Holly Borla: Swift Language Engineering Manager
+
+<ul>
+<li><a href="https://hachyderm.io/@holly">@holly</a> on Mastodon</li>
+</ul></li>
+<li>Ben Cohen: Senior Software Engineering Manager, Swift Team
+
+<ul>
+<li><a href="https://mastodon.social/@airspeedswift">@airspeedswift</a> on Mastodon</li>
+</ul></li>
+</ul>
+]]></description><itunes:subtitle>In this special episode from the Apple podcast studio at WWDC 2024, we interview Swift Core Team members Holly Borla and Ben Cohen.</itunes:subtitle></item><item><guid isPermaLink="false">cnowwm5rmvvnqlpt</guid><pubDate>Tue, 11 Jun 2024 02:35:41 +0000</pubDate><title>591: That's Why I Like Computers</title><itunes:title>That's Why I Like Computers</itunes:title><itunes:episode>591</itunes:episode><itunes:author>ATP</itunes:author><itunes:duration>02:30:24</itunes:duration><enclosure url="https://traffic.libsyn.com/atpfm/atp591.mp3" length="144385032" type="audio/mpeg"/><link>https://atp.fm/591</link><description><![CDATA[<p>Our WWDC 2024 recap episode.</p>
+
+<p>Sponsored by:</p>
+
+<ul>
+<li><a href="http://joindeleteme.com/ATP">DeleteMe</a>: DeleteMe makes it quick, easy and safe to remove your personal data online.</li>
+<li><a href="https://www.drinktrade.com/atp">Trade Coffee</a>: Enjoy 30% off your first month of coffee.</li>
+</ul>
+]]></description><itunes:subtitle>At WWDC 2024, together at last!</itunes:subtitle></item><item><guid isPermaLink="false">n05xlw1jn1htsnlq</guid><pubDate>Thu, 06 Jun 2024 20:24:11 +0000</pubDate><title>590: Buy Your Car an iPhone</title><itunes:title>Buy Your Car an iPhone</itunes:title><itunes:episode>590</itunes:episode><itunes:author>ATP</itunes:author><itunes:duration>02:37:00</itunes:duration><enclosure url="https://traffic.libsyn.com/atpfm/atp590.mp3" length="150795174" type="audio/mpeg"/><link>https://atp.fm/590</link><description><![CDATA[<ul>
 <li>Pre-show: Marco&#8217;s fans
 
 <ul>
@@ -69,7 +89,7 @@
 <li>Any chance we&#8217;ll get 16GB RAM in the eventual M4 MacBook Air? (via <a href="https://mastodon.social/@davidmartin/112523135565358819">David Martin</a>)</li>
 <li>Could the lack of cellular Mac be because there&#8217;s no Apple modem? (via Winnie Lewis)</li>
 </ul></li>
-<li>Post-show <a href="https://netural.fm/">Neutral</a>: Kid cars, revisited
+<li>Post-show <a href="https://neutral.fm/">Neutral</a>: Kid cars, revisited
 
 <ul>
 <li><a href="https://atp.fm/atp-neutral-car-shopping">ATP Neutral: Car shopping</a>
