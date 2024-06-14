@@ -1,6 +1,6 @@
 <template>
   <v-app id="inspire">
-    <!-- <v-app-bar
+    -- <v-app-bar
       class="px-3"
       density="compact"
       flat
@@ -8,7 +8,7 @@
       <v-spacer></v-spacer>
       <div>PodCastReader</div>
       <v-spacer></v-spacer>
-    </v-app-bar> -->
+    </v-app-bar>
                                                
     <v-main class="bg-grey-lighten-3">
       <v-container>
@@ -52,7 +52,7 @@
             md="2"
           >
             <v-sheet class="sticky-div"
-              min-height="268"
+              min-height="240"
               rounded="lg"
             >
               <v-card
@@ -60,7 +60,7 @@
                 max-width="400"
               >
                 <!-- <v-list :items="itemlist"></v-list> -->
-                <v-list :max-height="520"  style="overflow-y: auto;">
+                <v-list :max-height="480"  style="overflow-y: auto;">
                   <v-list-item
                     title="EpisodeList"
                   ></v-list-item>
@@ -86,7 +86,7 @@
             md="8"
           >
             <v-sheet
-              min-height="80vh"
+              min-height="75vh"
               rounded="lg"
             >
               <!--  -->
@@ -264,7 +264,8 @@ function handleTimeUpdate() {
     const currentSubtitle = findSubtitle(subtitle.value, currentTime);
     if (currentSubtitle) {
         //滚动到对应字幕
-        document.getElementById(`sub${currentSubtitle.start}`).scrollIntoView();
+        //document.getElementById(`sub${currentSubtitle.start}`).scrollIntoView();
+        scrollToElementCenter(`sub${currentSubtitle.start}`)
         document.querySelectorAll('blockquote').forEach(blockquote => {
           blockquote.classList.remove('bold-text');
         })
@@ -276,6 +277,32 @@ function handleTimeUpdate() {
   }
 }
 
+// 假设元素的ID为"elementId"
+function scrollToElementCenter(elementId) {
+  // 获取元素
+  var element = document.getElementById(elementId);
+
+  // 获取元素的高度
+  var elementHeight = element.offsetHeight;
+
+  // 获取视口的高度
+  var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+
+  // 计算元素到窗口顶部的距离
+  var elementTop = element.offsetTop;
+
+  // 计算滚动位置（使元素位于视口中央）
+  var scrollPosition = elementTop - (viewportHeight / 3) + (elementHeight / 3);
+
+  // 滚动到指定位置
+  window.scrollTo({
+    top: scrollPosition,
+    behavior: 'smooth' // 平滑滚动
+  });
+}
+
+
+
 </script>
 
 <style>
@@ -284,12 +311,12 @@ function handleTimeUpdate() {
     /* 其他样式 */
   }
   .padding-top{
-    padding-top: 20px; /* 根据需要调整这个值 */
-    margin-top: -20px; /* 这个值需要和上面的padding-top相同，但是为负值 */
+    padding-top: 60px; /* 根据需要调整这个值 */
+    margin-top: -60px; /* 这个值需要和上面的padding-top相同，但是为负值 */
   }
   .sticky-div {
     position: sticky;
-    top: 20px; /* 根据需要调整 */
+    top: 90px; /* 根据需要调整 */
     z-index: 1000; /* 确保固定div在顶部 */
   }
   audio {
