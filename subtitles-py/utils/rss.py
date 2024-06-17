@@ -2,6 +2,8 @@ import xml.etree.ElementTree as ET
 import requests
 import os
 import time
+import utils.opml as opml
+import json
 
 from dotenv import load_dotenv
 load_dotenv()
@@ -37,7 +39,7 @@ def download_audio(episode, save_path):
     title = episode['title'];
     link = episode['link'];
     enclosure_url = episode['enclosure_url'];
-    if not os.path.exists(save_path+title+'.mp3'):
+    if not os.path.exists(save_path+opml.url2md5(title)+'.mp3'):
         print('努力下载中： '+title+'.mp3')
         try:
             r = requests.get(enclosure_url,stream=True,allow_redirects=True)
@@ -48,7 +50,7 @@ def download_audio(episode, save_path):
                 # 如果保存的文件夹不存在，则创建
                 if not os.path.exists(save_path):
                     os.makedirs(save_path)
-                with open(save_path+title+'.mp3', 'wb') as f:
+                with open(save_path+opml.url2md5(title)+'.mp3', 'wb') as f:
                     for data in r.iter_content(chunk_size=1024):
                         f.write(data)
                         downloaded_size += len(data)
@@ -56,11 +58,11 @@ def download_audio(episode, save_path):
                         print(f"\r[{'#' * progress}{'.' * (50 - progress)}] {progress * 2}%", end="")
                         #print()
                     print()
-                    print(f"下载完成:{title}.mp3")
+                    print(f"下载完成:{title}:{opml.url2md5(title)}.mp3")
                 # 检查文件完整性
-                if os.path.getsize(save_path+title+'.mp3') == total_size:
+                if os.path.getsize(save_path+opml.url2md5(title)+'.mp3') == total_size:
                     print("文件下载完成，校验正常。")
-                    print("本地文件大小:",os.path.getsize(save_path+title+'.mp3'))
+                    print("本地文件大小:",os.path.getsize(save_path+opml.url2md5(title)+'.mp3'))
                     print("源文件大小:",total_size)
                 else:
                     print("文件下载完成，但校验异常。")
@@ -75,13 +77,15 @@ def download_all_audio(rss_folder, mp3_folder):
     #print(rss_files)
     for rss_file in rss_files:
         rss_entries = get_rss_entries(rss_folder+rss_file)
+        mp3json = [] #记录mp3和文件名md5的对应关系
         for index, episode in enumerate(rss_entries):
             if index < mp3_download_index:
+                mp3json.append({'title':episode['title'],'md5':opml.url2md5(episode['title'])})
                 # 检查本地是否已存在该音频
-                print('检查同名音频mp3',mp3_folder+rss_file+'/'+episode['title']+'.mp3')
-                print('检查同名字幕',subtitle_folder+rss_file+'/'+episode['title']+'.json')
-                mp3_exists = os.path.exists(mp3_folder+rss_file+'/'+episode['title']+'.mp3')
-                subtitle_exists = os.path.exists(subtitle_folder+rss_file+'/'+episode['title']+'.json')
+                print('检查同名音频mp3',mp3_folder+rss_file+'/'+opml.url2md5(episode['title'])+'.mp3')
+                print('检查同名字幕',subtitle_folder+rss_file+'/'+opml.url2md5(episode['title'])+'.json')
+                mp3_exists = os.path.exists(mp3_folder+rss_file+'/'+opml.url2md5(episode['title'])+'.mp3')
+                subtitle_exists = os.path.exists(subtitle_folder+rss_file+'/'+opml.url2md5(episode['title'])+'.json')
                 if not (mp3_exists or subtitle_exists):
                     download_audio(episode, mp3_folder+rss_file+'/')
                     time.sleep(5)
@@ -90,3 +94,7 @@ def download_all_audio(rss_folder, mp3_folder):
             else:
                 print(f'当前音频索引为{index-1},默认不下载。')
                 break
+        #将mp3json保存到本地mp3_folder文件夹下
+        with open(mp3_folder+rss_file+'/mp3.json', 'w', encoding='utf-8') as f:
+            json.dump(mp3json, f, ensure_ascii=False, indent=4)
+

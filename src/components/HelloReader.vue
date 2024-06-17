@@ -36,7 +36,7 @@
                     :key="item.title"
                     :title="item.title"
                     :value="item.value"
-                    @click="onPodlistClick(item.value)"
+                    @click="onPodlistClick(item)"
                   >
                     <v-tooltip activator="parent" location="top">
                       <span>{{ item.title }}</span>
@@ -161,11 +161,11 @@ function initMain(){
 }
 
 //点击podlist时触发
-async function  onPodlistClick(value){
-  console.log(value)
+async function  onPodlistClick(item){
+  console.log(item)
   itemlist.value = [];
   //将value编码为md5
-  const md5Hash = CryptoJS.MD5(value).toString();
+  const md5Hash = CryptoJS.MD5(item.title).toString();
   cur_folder = md5Hash;
   axios.get(`data/rss/${md5Hash}`).then(response => {
     const rss = response.data
@@ -208,13 +208,14 @@ function  onItemlistClick(item){
   cur_item.value = item
   console.log(item)
   audio_original_src.value = item.value
-  audiosrc.value = `data/mp3/${cur_folder}/${item.title}.mp3`
+  //CryptoJS.MD5(item.title).toString()
+  audiosrc.value = `data/mp3/${cur_folder}/${CryptoJS.MD5(item.title).toString()}.mp3`
   // nextTick(() => {
   //   // 重置音频元素
   //   audioElement.value.load();
   // });
   audioElement.value.load();
-  handleSubtitles(`data/subtitles/${cur_folder}/${item.title}.json`);
+  handleSubtitles(`data/subtitles/${cur_folder}/${CryptoJS.MD5(item.title).toString()}.json`);
 }
 
 function handleAudioError() {
