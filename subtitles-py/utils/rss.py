@@ -29,7 +29,10 @@ def get_rss_entries(rss_file_path):
     for item in root.findall('channel/item'):
         episode = {}
         episode['title'] = item.find('title').text
-        episode['link'] = item.find('link').text
+        if(item.find('link')):
+            episode['link'] = item.find('link').text
+        else:
+            episode['link'] = ''
         episode['enclosure_url'] = item.find('enclosure').attrib['url']
         rss_entries.append(episode)
     return rss_entries
@@ -92,7 +95,7 @@ def download_all_audio(rss_folder, mp3_folder):
                 else:
                     print(rss_file+'/'+episode['title']+'音频或者字幕已存在，跳过下载。')
             else:
-                print(f'当前音频索引为{index-1},默认不下载。')
+                print(f'当前音频索引为{index+1},默认不下载。')
                 break
         #将mp3json保存到本地mp3_folder文件夹下
         with open(mp3_folder+rss_file+'/mp3.json', 'w', encoding='utf-8') as f:

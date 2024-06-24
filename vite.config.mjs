@@ -41,6 +41,7 @@ export default defineConfig({
       '.vue',
     ],
   },
+  base:'/pod/',
   server: {
     port: 3000,
   },

@@ -136,6 +136,7 @@ let cur_item = ref({})
 let audiosrc = ref('')
 let audio_original_src = ref('')
 let subtitle = ref([])
+let current_subtitle = null
 let cur_folder = ''
 
 // 初始化
@@ -261,16 +262,21 @@ function findSubtitle(subtitles, currentTime) {
 function handleTimeUpdate() {
   if (audioElement.value) {
     let currentTime = audioElement.value.currentTime;
-    console.log(audioElement.value.currentTime)
-    const currentSubtitle = findSubtitle(subtitle.value, currentTime);
-    if (currentSubtitle) {
+    console.log(currentTime)
+    if(current_subtitle==null || (current_subtitle.end<currentTime || currentTime<current_subtitle.start)){
+      console.log('字幕查询')
+      current_subtitle = findSubtitle(subtitle.value, currentTime);
+    }else{
+      console.log('字幕查询skip')
+    }
+    if (current_subtitle) {
         //滚动到对应字幕
         //document.getElementById(`sub${currentSubtitle.start}`).scrollIntoView();
-        scrollToElementCenter(`sub${currentSubtitle.start}`)
+        scrollToElementCenter(`sub${current_subtitle.start}`)
         document.querySelectorAll('blockquote').forEach(blockquote => {
           blockquote.classList.remove('bold-text');
         })
-        document.getElementById(`subtitle${currentSubtitle.start}`).classList.add('bold-text');
+        document.getElementById(`subtitle${current_subtitle.start}`).classList.add('bold-text');
     } else {
         console.log('当前时间: ' + currentTime + ', 无字幕显示');
         // 在这里清除或隐藏字幕

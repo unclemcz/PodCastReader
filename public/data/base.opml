@@ -8,7 +8,8 @@
     <outline text="Compiler" title="Compiler" type="rss" xmlUrl="https://feeds.simplecast.com/Ynq4lw9w" htmlUrl="https://www.redhat.com/zh-tw/compiler-podcast" />
     <outline text="This American Life" title="This American Life" type="rss" xmlUrl="https://www.thisamericanlife.org/podcast/rss.xml" htmlUrl="https://www.thisamericanlife.org/" />
     <outline text="Global News Podcast" title="Global News Podcast" type="rss" xmlUrl="https://podcasts.files.bbci.co.uk/p02nq0gn.rss" htmlUrl="https://www.bbc.co.uk/programmes/p02nq0gn" />
-    <outline text="All Ears English Podcast" title="All Ears English Podcast" type="rss" xmlUrl="https://feeds.megaphone.fm/allearsenglish" htmlUrl="https://www.allearsenglish.com" />
+    <outline text="Sinica Podcast" title="Sinica Podcast" type="rss" xmlUrl="https://rss.art19.com/sinica" htmlUrl="https://art19.com/shows/sinica" />
+    <outline text="Accidental Tech Podcast" title="Accidental Tech Podcast" type="rss" xmlUrl="https://atp.fm/rss" htmlUrl="https://atp.fm/" />
   </body>
 </opml>
 
