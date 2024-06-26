@@ -107,15 +107,20 @@
       </v-container>
     </v-main>
     <v-footer
-      height="60"
+      height="120"
       app
     >
-      <audio controls ref="audioElement" @error="handleAudioError"  @timeupdate="handleTimeUpdate">
+      <div class="element-of-your-choice audioplayer">
+        <p>shikwasa播放器占位</p>
+      </div>
+      <!-- <audio controls ref="audioElement" @error="handleAudioError"  @timeupdate="handleTimeUpdate">
         <source :src="audiosrc" type="audio/mpeg" >
-      </audio>
+      </audio> -->
     </v-footer>
   </v-app>
 </template>
+
+
 
 
 <script setup>
@@ -127,22 +132,73 @@ import CryptoJS from 'crypto-js';
 
 import { ref,nextTick } from 'vue'
 
-
-const audioElement = ref(null);
+//const audioElement = ref(null);
+let  audioplayer = null;
 
 let podlist = ref([])
 let itemlist = ref([])
 let cur_item = ref({})
+let cur_pod = {}
 let audiosrc = ref('')
 let audio_original_src = ref('')
 let subtitle = ref([])
 let current_subtitle = null
 let cur_folder = ''
 
+import 'shikwasa/dist/style.css'
+import { Player } from 'shikwasa'
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  audioplayer = new Player({
+    container: () => document.querySelector('.element-of-your-choice'),
+    themeColor: '#000000',
+    audio: {
+      title: 'Hello World!',
+      artist: 'Shikwasa FM',
+      cover: 'image.png',
+      src: 'audio.mp3',
+    },
+  });
+  audioplayer.on('timeupdate',() => {
+    if (audioplayer) {
+      let currentTime = audioplayer.currentTime;
+      console.log(currentTime)
+      if(current_subtitle==null || (current_subtitle.end<currentTime || currentTime<current_subtitle.start)){
+        console.log('字幕查询')
+        current_subtitle = findSubtitle(subtitle.value, currentTime);
+        if (current_subtitle) {
+            //滚动到对应字幕
+            //document.getElementById(`sub${currentSubtitle.start}`).scrollIntoView();
+            scrollToElementCenter(`sub${current_subtitle.start}`)
+            document.querySelectorAll('blockquote').forEach(blockquote => {
+              blockquote.classList.remove('bold-text');
+            })
+            document.getElementById(`subtitle${current_subtitle.start}`).classList.add('bold-text');
+        } else {
+            console.log('当前时间: ' + currentTime + ', 无字幕显示');
+            // 在这里清除或隐藏字幕
+        }
+      }else{
+        console.log('字幕查询skip')
+      }
+    }
+  });
+  audioplayer.on('error',()=>{
+    console.log(cur_item.value.title,cur_pod.title,cur_pod.imageurl,audio_original_src.value);
+    audioplayer.update({
+        title: cur_item.value.title,
+        artist: cur_pod.title,
+        cover: cur_pod.imageurl,
+        src: audio_original_src.value
+    })
+  });
+});
+
+
 // 初始化
 initMain()
-
-// 点击itemlist时触发
 
 // 初始化
 function initMain(){
@@ -165,24 +221,42 @@ function initMain(){
 async function  onPodlistClick(item){
   console.log(item)
   itemlist.value = [];
+  cur_pod.title = item.title
   //将value编码为md5
   const md5Hash = CryptoJS.MD5(item.title).toString();
   cur_folder = md5Hash;
   axios.get(`data/rss/${md5Hash}`).then(response => {
     const rss = response.data
-    const feed = extractFromXml(rss,{getExtraEntryFields: (feedEntry) => {
-      const {
-        enclosure
-      } = feedEntry
-      return {
-        enclosure: {
-          url: enclosure['@_url'],
-          type: enclosure['@_type'],
-          length: enclosure['@_length']
+    const feed = extractFromXml(rss,{useISODateFormat: false,
+      getExtraFeedFields: (feedData) => {
+        return {
+          image: feedData.image || '',
+          itunes:feedData['itunes:image'] || '',
+        }
+      },
+      getExtraEntryFields: (feedEntry) => {
+        const {
+          enclosure
+        } = feedEntry
+        return {
+          enclosure: {
+            url: enclosure['@_url'],
+            type: enclosure['@_type'],
+            length: enclosure['@_length']
+          }
         }
       }
-    }})
+    })
     //解析feed
+    console.log(feed)
+    if (feed.image) {
+      cur_pod.imageurl=feed.image.url;
+    } else if(feed.itunes) {
+      cur_pod.imageurl=feed.itunes['@_href'];
+    }else{
+      cur_pod.imageurl='';
+    }
+    cur_pod.image=feed.image;
     feed.entries=feed.entries.slice(0, 100);
     feed.entries.forEach(element => {
       //console.log(element);
@@ -215,18 +289,24 @@ function  onItemlistClick(item){
   //   // 重置音频元素
   //   audioElement.value.load();
   // });
-  audioElement.value.load();
+  //audioElement.value.load();
   handleSubtitles(`data/subtitles/${cur_folder}/${CryptoJS.MD5(item.title).toString()}.json`);
+  audioplayer.update({
+      title: item.title,
+      artist: cur_pod.title,
+      cover: cur_pod.imageurl,
+      src: `data/mp3/${cur_folder}/${CryptoJS.MD5(item.title).toString()}.mp3`
+  })
 }
 
-function handleAudioError() {
-  console.log('音频加载失败，重新设置音频源')
-  audiosrc.value = audio_original_src.value;
-  nextTick(() => {
-    // 重置音频元素
-    audioElement.value.load();
-  });
-}
+// function handleAudioError() {
+//   console.log('音频加载失败，重新设置音频源')
+//   audiosrc.value = audio_original_src.value;
+//   nextTick(() => {
+//     // 重置音频元素
+//     audioElement.value.load();
+//   });
+// }
 
 //处理播客脚本显示
 function handleSubtitles(filepath){
@@ -259,30 +339,30 @@ function findSubtitle(subtitles, currentTime) {
 }
 
 //
-function handleTimeUpdate() {
-  if (audioElement.value) {
-    let currentTime = audioElement.value.currentTime;
-    console.log(currentTime)
-    if(current_subtitle==null || (current_subtitle.end<currentTime || currentTime<current_subtitle.start)){
-      console.log('字幕查询')
-      current_subtitle = findSubtitle(subtitle.value, currentTime);
-    }else{
-      console.log('字幕查询skip')
-    }
-    if (current_subtitle) {
-        //滚动到对应字幕
-        //document.getElementById(`sub${currentSubtitle.start}`).scrollIntoView();
-        scrollToElementCenter(`sub${current_subtitle.start}`)
-        document.querySelectorAll('blockquote').forEach(blockquote => {
-          blockquote.classList.remove('bold-text');
-        })
-        document.getElementById(`subtitle${current_subtitle.start}`).classList.add('bold-text');
-    } else {
-        console.log('当前时间: ' + currentTime + ', 无字幕显示');
-        // 在这里清除或隐藏字幕
-    }
-  }
-}
+// function handleTimeUpdate() {
+//   if (audioElement.value) {
+//     let currentTime = audioElement.value.currentTime;
+//     console.log(currentTime)
+//     if(current_subtitle==null || (current_subtitle.end<currentTime || currentTime<current_subtitle.start)){
+//       console.log('字幕查询')
+//       current_subtitle = findSubtitle(subtitle.value, currentTime);
+//     }else{
+//       console.log('字幕查询skip')
+//     }
+//     if (current_subtitle) {
+//         //滚动到对应字幕
+//         //document.getElementById(`sub${currentSubtitle.start}`).scrollIntoView();
+//         scrollToElementCenter(`sub${current_subtitle.start}`)
+//         document.querySelectorAll('blockquote').forEach(blockquote => {
+//           blockquote.classList.remove('bold-text');
+//         })
+//         document.getElementById(`subtitle${current_subtitle.start}`).classList.add('bold-text');
+//     } else {
+//         console.log('当前时间: ' + currentTime + ', 无字幕显示');
+//         // 在这里清除或隐藏字幕
+//     }
+//   }
+// }
 
 // 假设元素的ID为"elementId"
 function scrollToElementCenter(elementId) {
@@ -326,7 +406,7 @@ function scrollToElementCenter(elementId) {
     top: 90px; /* 根据需要调整 */
     z-index: 1000; /* 确保固定div在顶部 */
   }
-  audio {
+  .audioplayer {
     width: 100%; /* 让音频元素的宽度铺满父元素 */
   }
   blockquote {
