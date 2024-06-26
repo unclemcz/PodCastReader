@@ -317,6 +317,8 @@ function handleSubtitles(filepath){
     }else{
       subtitle.value = []
     }
+  }).catch(error=>{
+    subtitle.value = []
   })
 }
 
