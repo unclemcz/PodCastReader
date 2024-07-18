@@ -6,13 +6,18 @@ import utils.opml as opml
 import json
 
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv('.env')
+
+
 
 # 字幕文件夹
 subtitle_folder = os.getenv("subtitle_folder")
 mp3_download_index = os.getenv('mp3_download_index')
 # 将mp3_download_index转为整数
 mp3_download_index = int(mp3_download_index)
+print('mp3_download_index', mp3_download_index)
+
+
 
 # 获取特定文件夹下的所有文件名
 def get_file_names(folder_path):
@@ -82,6 +87,7 @@ def download_all_audio(rss_folder, mp3_folder):
         rss_entries = get_rss_entries(rss_folder+rss_file)
         mp3json = [] #记录mp3和文件名md5的对应关系
         for index, episode in enumerate(rss_entries):
+            print(f'下载数量限制mp3_download_index：{mp3_download_index}')
             if index < mp3_download_index:
                 mp3json.append({'title':episode['title'],'md5':opml.url2md5(episode['title'])})
                 # 检查本地是否已存在该音频

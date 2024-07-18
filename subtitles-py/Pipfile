@@ -6,6 +6,12 @@ name = "pypi"
 [packages]
 openai-whisper = "*"
 python-dotenv = "*"
+funasr = "*"
+torch = "*"
+torchaudio = "*"
+modelscope = "*"
+huggingface-hub = "*"
+numpy = "*"
 
 [dev-packages]
 

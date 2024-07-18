@@ -34,7 +34,7 @@ def main():
     rss.download_all_audio(rss_folder, mp3_folder)
 
     # 把mp3_folder下的音频生成字幕保存到subtitle_folder下
-    txt.generate_txts(mp3_folder,subtitle_folder)
+    txt.generate_txts_by_fast(mp3_folder,subtitle_folder)
 
 
 
