@@ -55,6 +55,11 @@ python3.10
 pipenv shell
 pipenv install
 ```
+升级包
+```
+pipenv update openai-whisper
+```
+
 
 ### 运行
 

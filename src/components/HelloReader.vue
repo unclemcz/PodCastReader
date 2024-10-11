@@ -199,6 +199,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // 初始化
 initMain()
+test()
 
 // 初始化
 function initMain(){
@@ -215,6 +216,13 @@ function initMain(){
     });
   })
   itemlist.value = [];
+}
+
+function test() {
+  axios.get('http://127.0.0.1/ollama/api/tags').then(response => {
+    const tags = response.data
+    console.log(tags)
+  })
 }
 
 //点击podlist时触发

@@ -38,7 +38,7 @@ def convert_to_time(seconds):
     minutes = (seconds % 3600) // 60
     seconds = seconds % 60
 
-    return f"{hours:02d}:{minutes:02d}:{seconds:02d},{mseconds:03d}"
+    return f"{hours:02d}:{minutes:02d}:{seconds:02d}"
 
 
 # 读取mp3_folder文件夹下所有的子文件夹名
@@ -50,7 +50,7 @@ def get_subfolders(folder):
 # 把mp3_folder文件夹下的所有音频生成生成字幕，保存到subtitle_folder文件夹下
 def generate_txts(mp3_folder,subtitle_folder):
    import whisper
-   model = whisper.load_model("base.en")
+   model = whisper.load_model("turbo")
    # 读取mp3_folder文件夹中的所有子文件夹
    mp3_subfolders = get_subfolders(mp3_folder)
    print(mp3_subfolders)
@@ -67,6 +67,7 @@ def generate_txts(mp3_folder,subtitle_folder):
                 print('whisper结束识别：',filename)
                 print("识别结束时间：", datetime.datetime.now())
                 print('正在生成字幕：',filename)
+                # print(result)
                 result = result["segments"]
                 result_list = [];
                 #result_for_save = ''
@@ -81,8 +82,8 @@ def generate_txts(mp3_folder,subtitle_folder):
                     segment_for_save = f"{start_time}"
                     #result_for_save += segment_for_save + "\n"
                     #result_object.append({"start":start,"end":end,"interval":segment_for_save,"text":text});
-                    result_dict['start'] = start
-                    result_dict['end'] = end
+                    result_dict['start'] = round(start,2)
+                    result_dict['end'] = round(end,2)
                     result_dict['interval'] = segment_for_save
                     result_dict['text'] = text
                     result_list.append(result_dict)
@@ -105,7 +106,7 @@ def generate_txts(mp3_folder,subtitle_folder):
 def generate_txts_by_fast(mp3_folder,subtitle_folder):
    from faster_whisper import WhisperModel
    #model = whisper.load_model("base.en")
-   model = WhisperModel("base.en", device="cpu", compute_type="int8")
+   model = WhisperModel("small.en", device="cuda", compute_type="float16")
    # 读取mp3_folder文件夹中的所有子文件夹
    mp3_subfolders = get_subfolders(mp3_folder)
    print(mp3_subfolders)
@@ -142,8 +143,8 @@ def generate_txts_by_fast(mp3_folder,subtitle_folder):
                     segment_for_save = f"{start_time}"
                     #result_for_save += segment_for_save + "\n"
                     #result_object.append({"start":start,"end":end,"interval":segment_for_save,"text":text});
-                    result_dict['start'] = start
-                    result_dict['end'] = end
+                    result_dict['start'] = round(start,2)
+                    result_dict['end'] = round(end,2)
                     result_dict['interval'] = segment_for_save
                     result_dict['text'] = text
                     result_list.append(result_dict)

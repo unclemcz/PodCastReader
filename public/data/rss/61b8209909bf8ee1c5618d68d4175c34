@@ -1,5 +1,272 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><channel><title>Accidental Tech Podcast</title><description>Three nerds discussing tech, Apple, programming, and loosely related matters.</description><itunes:author>Marco Arment, Casey Liss, John Siracusa</itunes:author><itunes:subtitle>Three nerds discussing tech, Apple, programming, and loosely related matters.</itunes:subtitle><link>https://atp.fm/</link><language>en</language><lastBuildDate>Tue, 18 Jun 2024 12:46:04 +0000</lastBuildDate><itunes:category text="Technology"/><itunes:image href="https://cdn.atp.fm/artwork"/><itunes:explicit>false</itunes:explicit><itunes:owner><itunes:name>Marco Arment</itunes:name><itunes:email>atp@marco.org</itunes:email></itunes:owner><copyright>Copyright 2013–2024 Accidental Tech Podcast</copyright><itunes:copyright>Copyright 2013–2024 Accidental Tech Podcast</itunes:copyright><item><guid isPermaLink="false">qtrznxzbt1djy3nk</guid><pubDate>Tue, 18 Jun 2024 12:46:04 +0000</pubDate><title>592: I Think He Won the Game</title><itunes:title>I Think He Won the Game</itunes:title><itunes:episode>592</itunes:episode><itunes:author>ATP</itunes:author><itunes:duration>01:57:49</itunes:duration><enclosure url="https://traffic.libsyn.com/atpfm/atp592.mp3" length="113686963" type="audio/mpeg"/><link>https://atp.fm/592</link><description><![CDATA[<ul>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"><channel><title>Accidental Tech Podcast</title><description>Three nerds discussing tech, Apple, programming, and loosely related matters.</description><itunes:author>Marco Arment, Casey Liss, John Siracusa</itunes:author><itunes:subtitle>Three nerds discussing tech, Apple, programming, and loosely related matters.</itunes:subtitle><link>https://atp.fm/</link><language>en</language><lastBuildDate>Tue, 16 Jul 2024 12:56:56 +0000</lastBuildDate><itunes:category text="Technology"/><itunes:image href="https://cdn.atp.fm/artwork"/><itunes:explicit>false</itunes:explicit><itunes:owner><itunes:name>Marco Arment</itunes:name><itunes:email>atp@marco.org</itunes:email></itunes:owner><copyright>Copyright 2013–2024 Accidental Tech Podcast</copyright><itunes:copyright>Copyright 2013–2024 Accidental Tech Podcast</itunes:copyright><item><guid isPermaLink="false">y3dvshlsnhllee14</guid><pubDate>Tue, 16 Jul 2024 12:56:56 +0000</pubDate><title>596: A New Foundation for Progress</title><itunes:title>A New Foundation for Progress</itunes:title><itunes:episode>596</itunes:episode><itunes:author>ATP</itunes:author><itunes:duration>01:58:42</itunes:duration><enclosure url="https://traffic.libsyn.com/atpfm/atp596.mp3" length="114686818" type="audio/mpeg"/><link>https://atp.fm/596</link><description><![CDATA[<ul>
+<li>Pre-show: Casey&#8217;s phoenix</li>
+<li>Follow-up:
+
+<ul>
+<li>More on &#8220;S-Tier&#8221; (via <a href="https://wetdry.world/@kuriko/112756480528490967">kuriko</a>)</li>
+<li>More on the <a href="https://en.wikipedia.org/wiki/IPod%2BHP">HP iPod</a> (via <a href="https://kolektiva.social/@Voline/112764468391370031">Voline</a>)</li>
+<li><a href="https://mstdn.social/@dschaub/112765052611121473">David Schaub identifies</a> the <a href="https://en.wikipedia.org/wiki/EMachines_eOne">iMac clone that Apple sued over</a></li>
+<li>European Union regulations &amp; profits (via Yury Molodtsov)</li>
+<li>More on non-competes (via Gary Havens)</li>
+<li>🇹🇼/🇺🇸 Culture Clash explained (via Ryan Lee)</li>
+</ul></li>
+<li><a href="https://overcast.fm/">Overcast</a>&#8217;s 10th Anniversary… <em>Launch</em>!<br />
+🎉 × 1️⃣0️⃣
+
+<ul>
+<li><a href="https://github.com/marcoarment/Blackbird">Blackbird</a></li>
+<li><a href="https://github.com/marcoarment/FCModel">FCModel</a></li>
+</ul></li>
+<li>Post-show: <a href="https://www.sonos.com/en-us/shop/two-room-set-era-100">Casey&#8217;s new office audio setup</a>
+
+<ul>
+<li><a href="https://www.sonos.com/en-us/shop/era-300">Era 300</a></li>
+<li><a href="https://www.sonos.com/en-us/shop/premium-immersive-set-arc-sub-era-100-pair">Premium Immersive Set with Arc</a> (Casey has the same Arc soundbar, the same Sub Gen 3, but One SLs as rears)</li>
+<li><a href="https://www.sonos.com/en-us/shop/sub">Sub (Gen 3)</a></li>
+<li><a href="https://www.sonos.com/en-us/shop/move-2">Move</a> (Casey has a Move 1)</li>
+<li><a href="https://www.sonos.com/en-us/shop/roam-2">Roam</a> (Casey has a Roam 1)</li>
+</ul></li>
+<li><a href="https://atp.fm/join">Members-only</a> ATP Overtime: <a href="https://zeppelin.flights/@jsnell/112719231341410760">Apple Notarization changes in Sequoia</a>
+
+<ul>
+<li><a href="https://zeppelin.flights/@jsnell/112719284459606315">Follow-up</a></li>
+</ul></li>
+</ul>
+
+<p>Sponsored by:</p>
+
+<ul>
+<li><a href="https://tailscale.com/download?utm_source=accidental+tech+podcast&amp;utm_medium=text&amp;utm_id=ATP&amp;utm_content=SSH">Tailscale</a>: A secure network that just works.</li>
+<li><a href="https://1password.com/XAM">1Password</a>: More than a password manager.</li>
+</ul>
+
+<p><a href="https://atp.fm/join">Become a member</a> for ATP Overtime, ad-free episodes, member specials, and our early-release, unedited “bootleg” feed!</p>
+]]></description><itunes:subtitle>The big Overcast rewrite is finally here on the app's tenth birthday.</itunes:subtitle></item><item><guid isPermaLink="false">m3rhbjm5bthktgpq</guid><pubDate>Wed, 10 Jul 2024 20:28:57 +0000</pubDate><title>595: The Best Secret Store</title><itunes:title>The Best Secret Store</itunes:title><itunes:episode>595</itunes:episode><itunes:author>ATP</itunes:author><itunes:duration>01:42:18</itunes:duration><enclosure url="https://traffic.libsyn.com/atpfm/atp595.mp3" length="98212270" type="audio/mpeg"/><link>https://atp.fm/595</link><description><![CDATA[<ul>
+<li>Pre-show: Casey&#8217;s tales of woe
+
+<ul>
+<li><a href="https://store.hermanmiller.com/standing-desks/jarvis-bamboo-standing-desk/2542428.html?lang=en_US"><span style="text-decoration: line-through">Fully</span> Herman Miller Jarvis</a></li>
+</ul></li>
+<li>Follow-up:
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/IPod%2BHP">An 🎵 accidental 🎵 miss</a> from the <a href="https://atp.fm/atp-tier-list-every-ipod">iPod Tier List special</a> (via <a href="https://mstdn.social/@scottshuchart/112736152222013806">Scott Shuchart</a>)</li>
+<li>The origins of <code>S-Tier</code> in <a href="https://en.wikipedia.org/wiki/Tier_list#Methodology">tier lists</a> (via David Schaub)
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Academic_grading_in_Japan">Grading in Japan</a></li>
+</ul></li>
+<li>AirPods Pro <a href="https://www.ifixit.com/Teardown/AirPods+Pro+Teardown/127551#s247984"><em>do</em> have an inward-facing microphone</a></li>
+<li>Another entry for Brexit-style name for Apple rage-quitting the EU (via Terry Gilbert)</li>
+<li>What&#8217;s the justification for allowing AI crawlers? (via <a href="https://mastodon.social/@manutastic/112735623177739752">Manu</a>)</li>
+<li><a href="https://blog.cloudflare.com/declaring-your-aindependence-block-ai-bots-scrapers-and-crawlers-with-a-single-click">Cloudflare has 1-click AI crawler blocking</a></li>
+<li>Epic Games &amp; Apple continue to bicker
+
+<ul>
+<li><a href="https://9to5mac.com/2024/07/05/epic-games-accuses-apple/">Epic accuses Apple of delaying its EU alternative store launch</a>
+
+<ul>
+<li><a href="https://x.com/EpicNewsroom/status/1809179985682325649">Epic&#8217;s statements</a></li>
+</ul></li>
+<li><a href="https://www.macrumors.com/2024/07/05/apple-approves-epic-games-store-eu/">Apple approves Epic Games Store</a></li>
+<li><a href="https://x.com/TimSweeneyEpic/status/1809336745613287445">Tim Sweeney pops off</a></li>
+</ul></li>
+</ul></li>
+<li>Tech and Labor
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Federal_Trade_Commission">FTC</a> has <a href="https://www.washingtonpost.com/business/2024/04/23/ftc-noncompete-agreements/">banned noncompete agreements for workers</a></li>
+<li><a href="https://restofworld.org/2024/tsmc-arizona-expansion/">TSMC&#8217;s Struggles in Arizona</a>
+
+<ul>
+<li><a href="https://daringfireball.net/linked/2024/04/23/tsmc-rest-of-world">Gruber&#8217;s summary</a></li>
+</ul></li>
+<li><a href="https://9to5mac.com/2024/04/18/us-made-chips-cost-apple-more/">US-made chips will cost Apple more</a>
+
+<ul>
+<li><a href="https://www.ft.com/content/ef8e2dd6-9e19-4997-aef7-0b9a1838588e">The Financial Times</a></li>
+</ul></li>
+<li><a href="https://arstechnica.com/tech-policy/2024/07/judge-says-ftc-lacks-authority-to-issue-rule-banning-noncompete-agreements/">Judge says &#8220;just kidding&#8221; to FTC&#8217;s noncompete ruling</a></li>
+</ul></li>
+<li>Ask ATP:
+
+<ul>
+<li>Is moving to a bundled password manager safe (via <a href="https://mastodon.social/@Trager/112596381299496581">Trager</a>)</li>
+<li>Is Apple&#8217;s embrace of AI enough to prevent it from being the next crypto? (via <a href="https://www.threads.net/@jamiewhear/post/C7d1labsPw3/">Jamie</a>)</li>
+<li>What makes iCloud Keychain different than the Windows Recall database? (via Jon Wilson)</li>
+<li>Is Apple still a privacy-first company? (via Steven Wood)</li>
+</ul></li>
+<li>Post-show: John still isn&#8217;t allowing holes in his house
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=7J52mDjZzto">Technology Connections video on heat pumps</a></li>
+<li><a href="https://www.youtube.com/watch?v=KNlDu_ZHIo8">Inverted U-shaped heat pumps</a></li>
+</ul></li>
+<li><a href="https://atp.fm/join">Members-only</a> ATP Overtime: <a href="https://mjtsai.com/blog/2024/07/03/feature-requests-for-death/">Feature Requests for Death</a>
+
+<ul>
+<li><a href="https://mastodon.social/@agiletortoise/112718541856786929">Greg Pierce</a></li>
+<li><a href="https://mastodon.social/@chockenberry/112723827682660528">Craig Hockenberry</a></li>
+<li><a href="https://lmnt.me/blog/love-death-and-computers.html">Louie Mantia</a></li>
+</ul></li>
+</ul>
+
+<p>Sponsored by:</p>
+
+<ul>
+<li><a href="https://squarespace.com/atp">Squarespace</a>: Save 10% off your first purchase of a website or domain using code <strong>ATP</strong>.</li>
+<li><a href="https://joindeleteme.com/ATP">DeleteMe</a>: Making it quick, easy and safe to remove your personal data online.</li>
+</ul>
+
+<p><a href="https://atp.fm/join">Become a member</a> for ATP Overtime, ad-free episodes, member specials, and our early-release, unedited “bootleg” feed!</p>
+]]></description><itunes:subtitle>Considerations for blocking AI crawlers, tech's labor issues, and Apple's continued battles with the world.</itunes:subtitle></item><item><guid isPermaLink="false">umwtzxjisgxqz0y3</guid><pubDate>Fri, 05 Jul 2024 03:45:02 +0000</pubDate><title>594: We Just Found It on the Doorstep</title><itunes:title>We Just Found It on the Doorstep</itunes:title><itunes:episode>594</itunes:episode><itunes:author>ATP</itunes:author><itunes:duration>01:54:19</itunes:duration><enclosure url="https://traffic.libsyn.com/atpfm/atp594.mp3" length="109997909" type="audio/mpeg"/><link>https://atp.fm/594</link><description><![CDATA[<ul>
+<li>Pre-show: 
+
+<ul>
+<li>Casey&#8217;s lunchtime soundtrack</li>
+<li>New member&#8217;s special: <a href="https://atp.fm/atp-tier-list-every-ipod">iPod Tier List</a></li>
+</ul></li>
+<li>Follow-up:
+
+<ul>
+<li>Is the genesis of the red/black U2 iPod <a href="https://www.u2.com/music/albums/4068">How to Dismantle an Atomic Bomb</a> (via Brian Hamilton)</li>
+<li>An additional &#8220;feature&#8221; of the U2 iPods (via Max Velasco Knott)</li>
+<li>One EU citizen&#8217;s perspective on DMA (via Nicolai Brunvoll Ernst)</li>
+<li>Suggestions for &#8220;Brexit&#8221;-style colloquialisms for Apple leaving the EU
+
+<ul>
+<li><code>iQuit</code> (via <a href="https://mastodon.social/@oliversthomas/112695233111549432">Oliver Thomas</a>)</li>
+<li><code>iLeave</code> (via <a href="https://mastodon.social/@jwcounts/112690663388252299">Jared Counts</a>)</li>
+<li><code>AXiT</code> (via <a href="https://toot.cafe/@bjoreman/112688880560920587">Frederik Björeman</a>)</li>
+</ul></li>
+<li>CarPlay audio
+
+<ul>
+<li><a href="https://amzn.to/3XQw9i7">New version of Casey&#8217;s dongle</a></li>
+</ul></li>
+<li><a href="https://www.nytimes.com/wirecutter/blog/can-airpods-pro-protect-your-hearing/">Using AirPods Pro as hearing protection</a> (via Kirk Northrop)</li>
+<li><a href="https://www.hpcwire.com/2024/06/18/apple-using-google-cloud-infrastructure-to-train-and-serve-ai/">Apple is using Google Cloud infrastructure to train/serve AI</a>
+
+<ul>
+<li><a href="https://github.com/apple/axlearn/blob/">AxLearn</a></li>
+<li><a href="https://github.com/apple/axlearn/blob/main/docs/04-infrastructure.md">AxLearn Infrastructure</a></li>
+</ul></li>
+</ul></li>
+<li><a href="https://www.apple.com/mac/best-mac/">Apple&#8217;s &#8220;Help Me Choose&#8221; Wizard</a>
+
+<ul>
+<li><a href="https://mastodon.social/@giulio/112642222209561074">Giulio Montagner discovers the dark truth</a></li>
+<li><a href="https://www.sonnettech.com/product/echo-express-se3e/overview.html">A PCI Express break-out box compatible with Apple Silicon Macs</a></li>
+</ul></li>
+<li>AI Training &amp; Data Rights
+
+<ul>
+<li><a href="https://mastodon.macstories.net/@johnvoorhees/112657481906728057">John Voorhees from MacStories</a></li>
+<li><a href="https://www.macstories.net/stories/ways-you-can-protect-your-website-from-ai-web-crawlers/">Protecting MacStories from AI Bots</a></li>
+<li><a href="https://www.businessinsider.com/openai-anthropic-ai-ignore-rule-scraping-web-contect-robotstxt">OpenAI and Anthropic are ignoring <code>robots.txt</code> as well</a>
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Robots.txt"><code>robots.txt</code></a></li>
+</ul></li>
+<li><a href="https://mjtsai.com/blog/2024/06/24/ai-companies-ignoring-robots-txt/">MJ Tsai roundup</a></li>
+<li><a href="https://www.fastcompany.com/91144894/perplexity-ai-ceo-aravind-srinivas-on-plagiarism-accusations">Perplexity CEO doesn&#8217;t really seem to care</a></li>
+<li><a href="https://www.theverge.com/2024/6/28/24188391/microsoft-ai-suleyman-social-contract-freeware">Microsoft&#8217;s AI boss actively doesn&#8217;t care about your feelings</a></li>
+</ul></li>
+<li><a href="https://www.theverge.com/24167865/google-zero-search-crash-housefresh-ai-overviews-traffic-data-audience">Google Zero</a></li>
+<li><a href="https://arstechnica.com/information-technology/2024/06/music-labels-sue-ai-music-generators-for-copyright-infringement/">Music industry giants cry copyright foul on AI firms</a>
+
+<ul>
+<li><a href="https://www.theverge.com/2024/6/24/24184710/riaa-ai-lawsuit-suno-udio-copyright-umg-sony-warner">The Verge</a></li>
+<li><a href="https://xoxo.zone/@andybaio/112672942121862792">Andy Baio</a>
+
+<ul>
+<li><a href="https://www.404media.co/listen-to-the-ai-generated-ripoff-songs-that-got-udio-and-suno-sued/">404 Media</a></li>
+</ul></li>
+<li><a href="https://www.theverge.com/24186085/riaa-lawsuits-udio-suno-copyright-fair-use-music">The RIAA versus AI, explained</a></li>
+</ul></li>
+<li><a href="https://www.theverge.com/2024/7/2/24190823/figma-ai-tool-apple-weather-app-copy">Figma pulls AI tool after it apes Apple&#8217;s design</a></li>
+<li><a href="https://hypercritical.co/2024/01/11/i-made-this">I Made This</a> - John&#8217;s post about AI and the act of creation</li>
+<li><a href="https://en.wikipedia.org/wiki/Monkey_selfie_copyright_dispute">Monkey selfie copyright dispute</a></li>
+<li>Post-show: John&#8217;s Mac Pro[blems]</li>
+<li><a href="https://atp.fm/join">Members-only</a> ATP Overtime: <a href="https://www.theinformation.com/articles/apple-suspends-work-on-next-high-end-headset-focused-on-releasing-cheaper-model-in-late-2025">Apple&#8217;s Vision Pro plans</a>
+
+<ul>
+<li><a href="https://www.bloomberg.com/news/newsletters/2024-06-23/apple-vision-plans-cheaper-model-in-late-2025-vision-pro-2-in-2026-ar-glasses-lxrjk6wu">Gurman&#8217;s take</a>    </li>
+<li><a href="https://sixcolors.com/post/2024/06/apples-vision-platform-needs-to-do-more-than-get-cheaper/">Jason&#8217;s take</a></li>
+</ul></li>
+</ul>
+
+<p>Sponsored by:</p>
+
+<ul>
+<li><a href="https://1password.com/xam">1Password</a>: More than a password manager.</li>
+<li><a href="https://photon.cam/atp">Photon Camera</a>: Unlock your creative potential with Photon Camera. Transform moments into masterpieces.</li>
+</ul>
+
+<p><a href="https://atp.fm/join">Become a member</a> for ATP Overtime, ad-free episodes, member specials, and our early-release, unedited “bootleg” feed!</p>
+]]></description><itunes:subtitle>AI vs. web publishers, AI vs. the record labels, AI vs. creators, John vs. creation, and self-identifying as a robot.</itunes:subtitle></item><item><guid isPermaLink="false">cdfsx1ruvezsa1fy</guid><pubDate>Thu, 27 Jun 2024 17:43:44 +0000</pubDate><title>593: Not a European Lawyer</title><itunes:title>Not a European Lawyer</itunes:title><itunes:episode>593</itunes:episode><itunes:author>ATP</itunes:author><itunes:duration>02:04:35</itunes:duration><enclosure url="https://traffic.libsyn.com/atpfm/atp593.mp3" length="119605532" type="audio/mpeg"/><link>https://atp.fm/593</link><description><![CDATA[<ul>
+<li>Pre-show: Casey&#8217;s thought processes and traditions
+
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/The_Last_Dance_(miniseries)">The Last Dance</a></li>
+</ul></li>
+<li>Follow-up:
+
+<ul>
+<li>iCloud Keychain browser integration in Sequoia
+
+<ul>
+<li><a href="https://hachyderm.io/@rmondello/112638531104700472">Ricky Mondello</a> on 
+
+<ul>
+<li><a href="https://developer.chrome.com/docs/extensions/develop/concepts/native-messaging">Chrome Native Messaging JSON files documentations</a></li>
+</ul></li>
+<li><a href="https://toot.cafe/@dotproto/112646160986166724">Simeon (formerly Chrome, now Firefox) weighs in</a>
+
+<ul>
+<li><a href="https://developer.chrome.com/docs/extensions/how-to/distribute/install-extensions">Use alternative installation methods for Chrome extensions</a></li>
+<li><a href="https://extensionworkshop.com/documentation/publish/distribute-sideloading/">Sideloading addons in Firefox</a></li>
+</ul></li>
+<li><a href="https://nileane.fr/@nileane/112638371850624426">Niléane points out Network Locations was already back in Sonoma</a></li>
+<li>iPhone Mirroring doesn&#8217;t help with rearranging your home screen (via <a href="https://techhub.social/@hunt2013/112673394112725945">Hunt 2013</a>)</li>
+<li>HomePods apparently <a href="https://twit.social/@jann/112644748535259535">have 1GB RAM</a></li>
+<li>Some insight on InSight</li>
+<li><a href="https://hachyderm.io/@mihaip/112640810847718896">Chess is around 35 years old</a>
+
+<ul>
+<li><a href="https://infinitemac.org/?filter=next">Infinite Mac</a></li>
+</ul></li>
+<li>CarPlay
+
+<ul>
+<li><a href="https://developer.apple.com/wwdc24/10112">Next-Generation CarPlay Design System</a></li>
+<li><a href="https://developer.apple.com/wwdc24/10111/">Next-generation CarPlay Architecture</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+<li><a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_24_3433">Apple Found in Breach of DMA</a>
+
+<ul>
+<li><a href="https://www.theverge.com/2024/6/24/24184629/apple-dma-steering-infringement-ruling">Apple Statement</a></li>
+<li><a href="https://ec.europa.eu/commission/presscorner/detail/en/speech_24_3442">Margrethe Vestager</a></li>
+</ul></li>
+<li><a href="https://www.theverge.com/2024/6/21/24183251/apple-eu-delay-ai-screen-mirroring-shareplay-dma">Apple may delay features because of DMA</a>
+
+<ul>
+<li><a href="https://www.apple.com/newsroom/2024/06/introducing-apple-intelligence-for-iphone-ipad-and-mac/">Press release</a></li>
+</ul></li>
+<li>Ask ATP:
+
+<ul>
+<li>Does anyone keep track if rumor mongers&#8217; claims are true are not? (via Todd Vaziri)</li>
+</ul></li>
+<li>Post-show: An update on Erin&#8217;s car situation</li>
+<li><a href="https://atp.fm/join">Members-only</a> ATP Overtime: <a href="https://www.bloomberg.com/news/newsletters/2024-06-16/when-is-apple-intelligence-coming-some-ai-features-won-t-arrive-until-2025-lxhjh86w">Apple plans thinner devices?</a></li>
+</ul>
+
+<p><a href="https://atp.fm/join">Become a member</a> for ATP Overtime, ad-free episodes, member specials, and our early-release, unedited “bootleg” feed!</p>
+]]></description><itunes:subtitle>The EU giveth, and Apple taketh away.</itunes:subtitle></item><item><guid isPermaLink="false">qtrznxzbt1djy3nk</guid><pubDate>Tue, 18 Jun 2024 12:46:04 +0000</pubDate><title>592: I Think He Won the Game</title><itunes:title>I Think He Won the Game</itunes:title><itunes:episode>592</itunes:episode><itunes:author>ATP</itunes:author><itunes:duration>01:57:49</itunes:duration><enclosure url="https://traffic.libsyn.com/atpfm/atp592.mp3" length="113686963" type="audio/mpeg"/><link>https://atp.fm/592</link><description><![CDATA[<ul>
 <li>Pre-show: Marco&#8217;s nethers and the Vision Pro
 
 <ul>
