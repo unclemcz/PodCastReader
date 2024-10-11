@@ -1,308 +1,410 @@
 [
     {
         "start": 0.0,
-        "end": 11.12,
+        "end": 7.56,
         "interval": "00:00:00",
-        "text": " Good morning, this is Send7 World News in 7 Minutes. I'm Stephen Devincenzi. Today is Tuesday the 16th of July 2024."
+        "text": " Good morning, this is Send7 World News in 7 Minutes. I'm Stephen Devincenzi. Today"
     },
     {
-        "start": 11.12,
-        "end": 25.82,
-        "interval": "00:00:11",
-        "text": " Starting in the Americas today, in the United States, both President Joe Biden and former"
+        "start": 7.56,
+        "end": 18.18,
+        "interval": "00:00:07",
+        "text": " is Tuesday the 16th of July, 2024."
     },
     {
-        "start": 25.82,
-        "end": 32.54,
+        "start": 18.18,
+        "end": 25.76,
+        "interval": "00:00:18",
+        "text": " Starting in the Americas today. In the United States, both President Joe Biden and former"
+    },
+    {
+        "start": 25.76,
+        "end": 32.8,
         "interval": "00:00:25",
         "text": " President Donald Trump have called for calm and unity following the assassination attempt"
     },
     {
-        "start": 32.54,
-        "end": 40.8,
+        "start": 32.8,
+        "end": 40.18,
         "interval": "00:00:32",
-        "text": " on Trump on Saturday. Biden has ordered a review of how it was possible for the attacker to get"
+        "text": " on Trump on Saturday. Biden has ordered a review of how it was possible for the attacker"
     },
     {
-        "start": 40.8,
-        "end": 48.24,
+        "start": 40.18,
+        "end": 46.56,
         "interval": "00:00:40",
-        "text": " close enough to shoot Trump. Speaking from the White House, Biden said that the U.S. cannot go down"
+        "text": " to get close enough to shoot Trump. Speaking from the White House, Biden said that the"
     },
     {
-        "start": 48.24,
-        "end": 55.86,
-        "interval": "00:00:48",
-        "text": " the path of political violence. A former president was shot, an American citizen killed, while simply"
+        "start": 46.56,
+        "end": 50.68,
+        "interval": "00:00:46",
+        "text": " US cannot go down the path of political violence."
     },
     {
-        "start": 55.86,
-        "end": 62.26,
-        "interval": "00:00:55",
-        "text": " exercising his freedom to support the candidate of his choosing. We cannot, we must not go down this"
+        "start": 50.68,
+        "end": 56.52,
+        "interval": "00:00:50",
+        "text": " A former president was shot, an American citizen killed, while simply exercising his"
     },
     {
-        "start": 62.26,
-        "end": 67.84,
+        "start": 56.52,
+        "end": 62.44,
+        "interval": "00:00:56",
+        "text": " freedom to support the candidate of his choosing. We cannot, we must not, go down this road"
+    },
+    {
+        "start": 62.44,
+        "end": 68.88,
         "interval": "00:01:02",
-        "text": " road in America. We've traveled before throughout our history. Violence has never been the answer."
+        "text": " in America. We've travelled before throughout our history. Violence has never been the answer."
     },
     {
-        "start": 67.84,
-        "end": 75.3,
-        "interval": "00:01:07",
-        "text": " Former President Trump announced yesterday that his choice for vice president is J.D. Vance,"
+        "start": 68.88,
+        "end": 75.74,
+        "interval": "00:01:08",
+        "text": " Former President Trump announced yesterday that his choice for Vice President is JD Vance,"
     },
     {
-        "start": 75.82,
-        "end": 84.94,
+        "start": 75.74,
+        "end": 78.98,
         "interval": "00:01:15",
-        "text": " a senator from Ohio. Argentina has won the Copa America football tournament, beating Colombia 1-0"
+        "text": " a senator from Ohio."
     },
     {
-        "start": 84.94,
-        "end": 93.96,
-        "interval": "00:01:24",
-        "text": " in the final in the U.S. city of Miami. Argentina has won the Copa America 16 times, more than any other"
+        "start": 78.98,
+        "end": 86.22,
+        "interval": "00:01:18",
+        "text": " Argentina has won the Copa America football tournament, beating Colombia 1-0 in the final"
     },
     {
-        "start": 93.96,
-        "end": 104.24,
+        "start": 86.22,
+        "end": 93.86,
+        "interval": "00:01:26",
+        "text": " in the US city of Miami. Argentina has won the Copa America 16 times more than any other"
+    },
+    {
+        "start": 93.86,
+        "end": 95.78,
         "interval": "00:01:33",
-        "text": " team. In Brazil, the model and Instagram influencer Cat Torres has been sentenced to eight years in jail"
+        "text": " team."
     },
     {
-        "start": 104.24,
-        "end": 113.42,
-        "interval": "00:01:44",
-        "text": " for human trafficking and slavery. Over 20 women say that Torres scammed or exploited them, with some"
+        "start": 95.78,
+        "end": 103.5,
+        "interval": "00:01:35",
+        "text": " In Brazil, the model and Instagram influencer Cat Torres has been sentenced to eight years"
     },
     {
-        "start": 113.42,
-        "end": 121.6,
-        "interval": "00:01:53",
-        "text": " saying that they were trafficked to the United States and forced to work. A judge gave Torres the eight-year"
+        "start": 103.5,
+        "end": 111.08,
+        "interval": "00:01:43",
+        "text": " in jail for human trafficking and slavery. Over twenty women say that Torres scammed"
     },
     {
-        "start": 121.6,
-        "end": 130.16,
-        "interval": "00:02:01",
-        "text": " sentence for crimes relating to just one of Torres' followers, who the judge said was taken abroad for"
+        "start": 111.08,
+        "end": 117.46,
+        "interval": "00:01:51",
+        "text": " or exploited them, with some saying that they were trafficked to the United States and forced"
     },
     {
-        "start": 130.16,
-        "end": 140.86,
-        "interval": "00:02:10",
-        "text": " sexual exploitation. Africa. In Somalia, a car bomb has killed five people in the capital Mogadishu."
+        "start": 117.46,
+        "end": 125.38,
+        "interval": "00:01:57",
+        "text": " to work. A judge gave Torres the eight-year sentence for crimes relating to just one of"
     },
     {
-        "start": 141.56,
-        "end": 149.48,
-        "interval": "00:02:21",
-        "text": " The Islamist jihadist group Al-Shabaab claimed responsibility. In Rwanda, there were presidential"
+        "start": 125.38,
+        "end": 134.54,
+        "interval": "00:02:05",
+        "text": " Torres' followers, who the judge said was taken abroad for sexual exploitation."
     },
     {
-        "start": 149.48,
-        "end": 157.14,
-        "interval": "00:02:29",
-        "text": " elections yesterday, although elections in Rwanda are generally not considered to be free and fair by"
+        "start": 134.54,
+        "end": 135.54,
+        "interval": "00:02:14",
+        "text": " Africa"
     },
     {
-        "start": 157.14,
-        "end": 164.84,
-        "interval": "00:02:37",
-        "text": " international observers. Paul Kagame has been president of Rwanda since the year 2000, but has"
+        "start": 135.54,
+        "end": 143.06,
+        "interval": "00:02:15",
+        "text": " In Somalia, a car bomb has killed five people in the capital Mogadishu. The Islamist jihadist"
     },
     {
-        "start": 164.84,
-        "end": 172.62,
-        "interval": "00:02:44",
-        "text": " effectively ruled Rwanda since 1994. There were two other candidates in this election, however many other"
+        "start": 143.06,
+        "end": 147.3,
+        "interval": "00:02:23",
+        "text": " group al-Shabaab claimed responsibility."
     },
     {
-        "start": 172.62,
-        "end": 183.68,
-        "interval": "00:02:52",
-        "text": " opposition candidates were not allowed to run. Asia and Oceania. Pakistan's government is planning to ban"
+        "start": 147.3,
+        "end": 153.7,
+        "interval": "00:02:27",
+        "text": " In Rwanda, there were presidential elections yesterday, although elections in Rwanda are"
     },
     {
-        "start": 183.68,
-        "end": 190.9,
-        "interval": "00:03:03",
-        "text": " the political party of former Prime Minister Imran Khan, according to Information Minister Atala Tara."
+        "start": 153.7,
+        "end": 160.4,
+        "interval": "00:02:33",
+        "text": " generally not considered to be free and fair by international observers. Paul Kagame has"
     },
     {
-        "start": 191.9,
-        "end": 200.6,
-        "interval": "00:03:11",
-        "text": " Khan's party, Teriq-e-Insaf, won the most seats in parliament in the last two elections. However, Tara said"
+        "start": 160.4,
+        "end": 168.7,
+        "interval": "00:02:40",
+        "text": " been president of Rwanda since the year 2000, but has effectively ruled Rwanda since 1994."
     },
     {
-        "start": 200.6,
-        "end": 209.0,
-        "interval": "00:03:20",
-        "text": " yesterday that the party would be banned because of proven charges of Teriq-e-Insaf receiving foreign money"
+        "start": 168.7,
+        "end": 174.14,
+        "interval": "00:02:48",
+        "text": " There were two other candidates in this election, however many other opposition candidates were"
     },
     {
-        "start": 209.0,
-        "end": 219.32,
-        "interval": "00:03:29",
-        "text": " and because of the rioting of its supporters. In New Zealand, the rarest whale in the world has been"
+        "start": 174.14,
+        "end": 178.1,
+        "interval": "00:02:54",
+        "text": " not allowed to run."
     },
     {
-        "start": 219.32,
-        "end": 227.6,
-        "interval": "00:03:39",
-        "text": " found washed up on a beach. Spade-toothed whales are famous for the fact that they have never been seen"
+        "start": 178.1,
+        "end": 180.34,
+        "interval": "00:02:58",
+        "text": " Asia and Oceania"
     },
     {
-        "start": 227.6,
-        "end": 236.12,
-        "interval": "00:03:47",
-        "text": " alive, and scientists don't know how many there are, what they eat, or where they live. New Zealand's"
+        "start": 180.46,
+        "end": 186.62,
+        "interval": "00:03:00",
+        "text": " Pakistan's government is planning to ban the political party of former Prime Minister"
     },
     {
-        "start": 236.12,
-        "end": 243.16,
+        "start": 186.62,
+        "end": 194.82,
+        "interval": "00:03:06",
+        "text": " Imran Khan, according to Information Minister Ataullah Tawra. Khan's party, Tariq-e-Insaf,"
+    },
+    {
+        "start": 194.82,
+        "end": 201.3,
+        "interval": "00:03:14",
+        "text": " won the most seats in parliament in the last two elections. However, Tawra said yesterday"
+    },
+    {
+        "start": 201.3,
+        "end": 208.14,
+        "interval": "00:03:21",
+        "text": " that the party would be banned because of proven charges of Tariq-e-Insaf receiving"
+    },
+    {
+        "start": 208.14,
+        "end": 214.42,
+        "interval": "00:03:28",
+        "text": " foreign money and because of the rioting of its supporters."
+    },
+    {
+        "start": 214.42,
+        "end": 223.14,
+        "interval": "00:03:34",
+        "text": " In New Zealand, the rarest whale in the world has been found washed up on a beach. Spade-toothed"
+    },
+    {
+        "start": 223.14,
+        "end": 230.34,
+        "interval": "00:03:43",
+        "text": " whales are famous for the fact that they have never been seen alive and scientists don't"
+    },
+    {
+        "start": 230.34,
+        "end": 236.82,
+        "interval": "00:03:50",
+        "text": " know how many there are, what they eat or where they live. New Zealand's conservation"
+    },
+    {
+        "start": 236.82,
+        "end": 243.18,
         "interval": "00:03:56",
-        "text": " conservation agency said that finding this spade-toothed whale could help to discover a lot of new"
+        "text": " agency said that finding this spade-toothed whale could help to discover a lot of new"
     },
     {
-        "start": 243.16,
-        "end": 253.86,
+        "start": 243.18,
+        "end": 248.02,
         "interval": "00:04:03",
-        "text": " information about the species. Europe. Estonian Prime Minister Kaya Kallas has announced her resignation"
+        "text": " information about the species."
     },
     {
-        "start": 253.86,
-        "end": 261.9,
-        "interval": "00:04:13",
-        "text": " in order to take the position of European Union Foreign Policy Chief, currently held by Josep Borrell."
+        "start": 248.02,
+        "end": 249.18,
+        "interval": "00:04:08",
+        "text": " Europe"
     },
     {
-        "start": 262.38,
-        "end": 270.12,
-        "interval": "00:04:22",
-        "text": " Kallas has been Prime Minister of Estonia for three and a half years, and is well known for her strong"
+        "start": 249.18,
+        "end": 256.26,
+        "interval": "00:04:09",
+        "text": " Estonian Prime Minister Kaja Kallas has announced her resignation in order to take the position"
     },
     {
-        "start": 270.12,
-        "end": 277.92,
+        "start": 256.26,
+        "end": 264.3,
+        "interval": "00:04:16",
+        "text": " of European Union Foreign Policy Chief, currently held by Josep Borrell. Kallas has been Prime"
+    },
+    {
+        "start": 264.3,
+        "end": 270.94,
+        "interval": "00:04:24",
+        "text": " Minister of Estonia for three and a half years, and is well known for her strong stance"
+    },
+    {
+        "start": 270.94,
+        "end": 277.04,
         "interval": "00:04:30",
-        "text": " stance against Russia and in support of Ukraine. She will remain as Prime Minister until a new government"
+        "text": " against Russia and in support of Ukraine. She will remain as Prime Minister until a"
     },
     {
-        "start": 277.92,
-        "end": 288.42,
+        "start": 277.04,
+        "end": 280.38,
         "interval": "00:04:37",
-        "text": " is formed. In Italy, a pilot programme in Venice which charged people 5 euros for a day visit to Venice"
+        "text": " new government is formed."
     },
     {
-        "start": 288.42,
-        "end": 297.48,
+        "start": 280.38,
+        "end": 288.94,
+        "interval": "00:04:40",
+        "text": " In Italy, a pilot program in Venice which charged people \u20ac5 for a day visit to Venice"
+    },
+    {
+        "start": 288.94,
+        "end": 296.66,
         "interval": "00:04:48",
-        "text": " has finished. Over 2 million euros was raised from the fee, however opposition politicians have said that"
+        "text": " has finished. Over \u20ac2 million was raised from the fee, however opposition politicians"
     },
     {
-        "start": 297.48,
-        "end": 305.78,
-        "interval": "00:04:57",
-        "text": " the fee did not work, as the number of people visiting during this period was more than in previous years,"
+        "start": 296.66,
+        "end": 303.34,
+        "interval": "00:04:56",
+        "text": " have said that the fee did not work as the number of people visiting during this period"
     },
     {
-        "start": 305.78,
-        "end": 313.96,
-        "interval": "00:05:05",
-        "text": " showing that people were not dissuaded from visiting. Venice tourism officials have suggested that the"
+        "start": 303.34,
+        "end": 311.3,
+        "interval": "00:05:03",
+        "text": " was more than in previous years, showing that people were not dissuaded from visiting. Venice"
     },
     {
-        "start": 313.96,
-        "end": 324.62,
-        "interval": "00:05:13",
-        "text": " entry fee may return next year, and could be raised to 10 euros. In Ukraine, the Ukrainian army is making"
+        "start": 311.3,
+        "end": 318.22,
+        "interval": "00:05:11",
+        "text": " tourism officials have suggested that the entry fee may return next year and could be"
     },
     {
-        "start": 324.62,
-        "end": 332.62,
-        "interval": "00:05:24",
-        "text": " small advances in the Russian-occupied parts of Kharkiv region, and has recaptured one village and some"
+        "start": 318.22,
+        "end": 321.54,
+        "interval": "00:05:18",
+        "text": " raised to \u20ac10."
     },
     {
-        "start": 332.62,
-        "end": 341.52,
-        "interval": "00:05:32",
-        "text": " parts of the city of Vovchansk over the last few days. In Donetsk region, the Russian army is continuing to"
+        "start": 321.54,
+        "end": 328.38,
+        "interval": "00:05:21",
+        "text": " In Ukraine, the Ukrainian army is making small advances in the Russian-occupied parts of"
     },
     {
-        "start": 341.52,
-        "end": 349.22,
-        "interval": "00:05:41",
-        "text": " make small advances, and has claimed to take control of one village. Ukraine has said that Russia has"
+        "start": 328.38,
+        "end": 335.78,
+        "interval": "00:05:28",
+        "text": " Kharkiv region and has recaptured one village and some parts of the city of Vovchansk over"
     },
     {
-        "start": 349.22,
-        "end": 357.06,
-        "interval": "00:05:49",
-        "text": " removed its last navy ship from the occupied region of Crimea. Crimea officially holds the headquarters"
+        "start": 335.78,
+        "end": 343.18,
+        "interval": "00:05:35",
+        "text": " the last few days. In Donetsk region, the Russian army is continuing to make small advances"
     },
     {
-        "start": 357.06,
-        "end": 365.48,
+        "start": 343.18,
+        "end": 350.18,
+        "interval": "00:05:43",
+        "text": " and has claimed to take control of one village. Ukraine has said that Russia has removed its"
+    },
+    {
+        "start": 350.18,
+        "end": 357.38,
+        "interval": "00:05:50",
+        "text": " last navy ship from the occupied region of Crimea. Crimea officially holds the headquarters"
+    },
+    {
+        "start": 357.38,
+        "end": 365.18,
         "interval": "00:05:57",
-        "text": " of Russia's Black Sea fleet, however, Ukraine's repeated successful strikes on ships and submarines in"
+        "text": " of Russia's Black Sea Fleet, however Ukraine's repeated successful strikes on ships and submarines"
     },
     {
-        "start": 365.48,
-        "end": 375.54,
+        "start": 365.18,
+        "end": 372.1,
         "interval": "00:06:05",
-        "text": " Sevastopol port have forced Russia to move them away from Crimea. And studies in Sweden and Denmark have"
+        "text": " in Sevastopol port have forced Russia to move them away from Crimea."
     },
     {
-        "start": 375.54,
-        "end": 386.16,
-        "interval": "00:06:15",
-        "text": " suggested that the Neolithic population decline may have been caused by plague. The Neolithic decline was a"
+        "start": 372.1,
+        "end": 380.26,
+        "interval": "00:06:12",
+        "text": " And studies in Sweden and Denmark have suggested that the Neolithic population decline may"
     },
     {
-        "start": 386.16,
-        "end": 395.32,
-        "interval": "00:06:26",
-        "text": " fast drop in the human population between 5,000 and 6,000 years ago, and came shortly after a fast"
+        "start": 380.26,
+        "end": 389.54,
+        "interval": "00:06:20",
+        "text": " have been caused by plague. The Neolithic decline was a fast drop in the human population"
     },
     {
-        "start": 395.32,
-        "end": 404.22,
-        "interval": "00:06:35",
-        "text": " increase of the human population when humans first practised agriculture. Researchers in Sweden and Denmark have"
+        "start": 389.54,
+        "end": 397.26,
+        "interval": "00:06:29",
+        "text": " between 5,000 and 6,000 years ago and came shortly after a fast increase of the human"
     },
     {
-        "start": 404.22,
-        "end": 415.64,
+        "start": 397.26,
+        "end": 404.82,
+        "interval": "00:06:37",
+        "text": " population when humans first practised agriculture. Researchers in Sweden and Denmark have studied"
+    },
+    {
+        "start": 404.82,
+        "end": 414.58,
         "interval": "00:06:44",
-        "text": " studied the DNA from bones and teeth, and found that 32% of them were infected with plague, a similar plague to the"
+        "text": " the DNA from bones and teeth and found that 32% of them were infected with plague, a similar"
     },
     {
-        "start": 415.64,
-        "end": 424.68,
-        "interval": "00:06:55",
-        "text": " black death which killed half of Europe's population in the 14th century. Today, cases and deaths from plague are"
+        "start": 414.58,
+        "end": 421.58,
+        "interval": "00:06:54",
+        "text": " plague to the Black Death which killed half of Europe's population in the 14th century."
     },
     {
-        "start": 424.68,
-        "end": 433.32,
-        "interval": "00:07:04",
-        "text": " extremely rare. That's your world news in seven minutes. If you enjoy this podcast, please tell someone about it."
+        "start": 421.58,
+        "end": 426.18,
+        "interval": "00:07:01",
+        "text": " Today, cases and deaths from plague are extremely rare."
     },
     {
-        "start": 433.84,
-        "end": 442.34,
-        "interval": "00:07:13",
-        "text": " You can get in touch with us by sending an email to podcast at send7.org. We do read every message."
+        "start": 426.18,
+        "end": 432.78,
+        "interval": "00:07:06",
+        "text": " That's your World News in 7 Minutes. If you enjoy this podcast, please tell someone"
     },
     {
-        "start": 442.34,
-        "end": 444.8,
-        "interval": "00:07:22",
-        "text": " Have a great day. See you tomorrow."
+        "start": 432.78,
+        "end": 440.42,
+        "interval": "00:07:12",
+        "text": " about it. You can get in touch with us by sending an email to podcast at send7.org."
+    },
+    {
+        "start": 440.42,
+        "end": 445.58,
+        "interval": "00:07:20",
+        "text": " We do read every message. Have a great day, see you tomorrow."
     }
 ]

@@ -12,6 +12,7 @@ torchaudio = "*"
 modelscope = "*"
 huggingface-hub = "*"
 numpy = "*"
+faster-whisper = "*"
 
 [dev-packages]
 

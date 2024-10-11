@@ -106,7 +106,7 @@ def generate_txts(mp3_folder,subtitle_folder):
 def generate_txts_by_fast(mp3_folder,subtitle_folder):
    from faster_whisper import WhisperModel
    #model = whisper.load_model("base.en")
-   model = WhisperModel("small.en", device="cuda", compute_type="float16")
+   model = WhisperModel("medium.en", device="cuda", compute_type="float16")
    # 读取mp3_folder文件夹中的所有子文件夹
    mp3_subfolders = get_subfolders(mp3_folder)
    print(mp3_subfolders)
