@@ -2,6 +2,7 @@
 node_modules
 /dist
 public/data/mp3/*
+public/data/subtitles/*
 
 # local env files
 .env.local

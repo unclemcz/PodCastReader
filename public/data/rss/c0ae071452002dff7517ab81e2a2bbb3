@@ -1,232 +1,399 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xml:base="https://www.thisamericanlife.org"  xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd">
+<rss version="2.0" xml:base="https://www.thisamericanlife.org/podcast/rss.xml"  xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:media="http://search.yahoo.com/mrss/">
 <channel>
  <title>This American Life</title>
- <link>https://www.thisamericanlife.org</link>
+ <link>https://www.thisamericanlife.org/podcast/rss.xml</link>
  <description>Each week we choose a theme. Then anything can happen. This American Life is true stories that unfold like little movies for radio. Personal stories with funny moments, big feelings, and surprising plot twists. Newsy stories that try to capture what it’s like to be alive right now. It’s the most popular weekly podcast in the world, and winner of the first ever Pulitzer Prize for a radio show or podcast. Hosted by Ira Glass and produced in collaboration with WBEZ Chicago.</description>
  <language>en</language>
  <itunes:new-feed-url>https://www.thisamericanlife.org/podcast/rss.xml</itunes:new-feed-url>
- <copyright>Copyright 1995-2024 This American Life</copyright>
+ <atom:link href="https://www.thisamericanlife.org/podcast/rss.xml" rel="self" type="application/rss+xml" />
+ <copyright>Copyright 1995-2026 This American Life</copyright>
  <itunes:author>This American Life</itunes:author>
  <itunes:subtitle>Each week we choose a theme. Then anything can happen. This American Life is true stories that unfold like little movies for radio. Personal stories with funny moments, big feelings, and surprising plot twists. Newsy stories that try to capture what it’s like to be alive right now. It’s the most popular weekly podcast in the world, and winner of the first ever Pulitzer Prize for a radio show or podcast. Hosted by Ira Glass and produced in collaboration with WBEZ Chicago.</itunes:subtitle>
- <itunes:owner> <itunes:email>rich@thislife.org</itunes:email>
+ <itunes:explicit>false</itunes:explicit>
+ <itunes:owner> <itunes:email>web@thislife.org</itunes:email>
 </itunes:owner>
  <itunes:category text="Society &amp; Culture" />
  <itunes:category text="Arts" />
- <itunes:category text="News"> <itunes:category text="Politics" />
-</itunes:category>
- <itunes:image href="https://thisamericanlife.org/sites/all/themes/thislife/img/tal-name-1400x1400.png" />
- <verification>152380</verification>
+ <itunes:category text="News" />
+ <itunes:image href="https://thisamericanlife.org/sites/all/themes/thislife/img/tal-logo-3000x3000.png" />
 <item>
- <title>794: So Close and Yet So Far</title>
- <link>https://www.thisamericanlife.org/794/so-close-and-yet-so-far</link>
- <description>&lt;p&gt;People ​so close to each other, ​in ​extremely intimate situations​,​ who are also a million miles apart.
-&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Prologue: Valerie Kipnis tells Ira about riding the subway, shoulder-to-shoulder with someone she knows quite well, pretending she doesn’t see him. (8 minutes)&lt;/li&gt;&lt;li&gt;Act One: How much can you trust whether somebody who you think is close to you really is close to you? Saidu Tejan-Thomas Jr.’s been thinking about that question since a recent visit with some of his childhood friends in Sierra Leone. (37 minutes)&lt;/li&gt;&lt;li&gt;Act Two: Comedian Tig Notaro has the story of someone as close as her actual bedside yet who, in another way, is impossibly far away. (9 minutes)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Transcripts are available at &lt;a href=&quot;https://www.thisamericanlife.org/794/transcript&quot;&gt;thisamericanlife.org&lt;/a&gt;&lt;/p&gt;</description>
- <pubDate>Sun, 14 Jul 2024 18:00:00 -0400</pubDate>
- <guid isPermaLink="false">45297 at https://www.thisamericanlife.org</guid>
+ <title>801: Must Be Rats on the Brain</title>
+ <link>https://www.thisamericanlife.org/801/must-be-rats-on-the-brain</link>
+ <description>&lt;p&gt;The one animal we can’t seem to live without, even when we really, really want to.
+
+&lt;/p&gt;&lt;p&gt;Visit &lt;a href=&quot;https://thisamericanlife.supercast.com&quot;&gt;thisamericanlife.org/lifepartners&lt;/a&gt; to sign up for our premium subscription&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Prologue: At the announcement of New York City’s inaugural rat czar, we meet Darneice Foster, who despises the rats outside her apartment. And host Ira Glass introduces two special co-hosts for today’s show. (11 minutes)&lt;/li&gt;&lt;li&gt;Act One: Producer Elna Baker meets Todd Sklar, a man who can’t quit rats. (22 minutes)&lt;/li&gt;&lt;li&gt;Act Two: Fifty years ago, New York City started to put garbage out in plastic bags. This has become the number one food source for rats. Producer Ike Sriskandarajah investigates the decision that led to the city’s rat baby boom. (10 minutes)&lt;/li&gt;&lt;li&gt;Act Three: How did Alberta, Canada pull off a feat that has eluded the rest of human civilization? Ira visits the largest rat-less land in the world. (15 minutes)&lt;/li&gt;&lt;li&gt;Act Four: We drop a hot mic into a hot mess of a rats’ nest. You’ll never believe what happens next. (3 minutes)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Transcripts are available at &lt;a href=&quot;https://www.thisamericanlife.org/801/transcript&quot;&gt;thisamericanlife.org&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#039;https://www.thisamericanlife.org/page/privacy-policy&#039;&gt;This American Life privacy policy.&lt;/a&gt;&lt;br /&gt;&lt;a href=&#039;https://podcastchoices.com/adchoices&#039;&gt;Learn more about sponsor message choices.&lt;/a&gt;&lt;/p&gt;</description>
+ <pubDate>Sun, 28 Dec 2025 18:00:00 -0500</pubDate>
+ <guid isPermaLink="false">45354 at https://www.thisamericanlife.org</guid>
+ <itunes:episodeType>full</itunes:episodeType>
+ <itunes:episode>801</itunes:episode>
+ <itunes:title>Must Be Rats on the Brain</itunes:title>
  <itunes:author>This American Life</itunes:author>
- <enclosure url="https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp3/chtbl.com/track/8DB4DB/pdst.fm/e/nyt.simplecastaudio.com/bbbcc290-ed3b-44a2-8e5d-5513e38cfe20/episodes/b7e7b73b-db6e-4252-8790-1d481c9549d1/audio/128/default.mp3?awCollectionId=bbbcc290-ed3b-44a2-8e5d-5513e38cfe20&amp;awEpisodeId=b7e7b73b-db6e-4252-8790-1d481c9549d1" type="audio/mpeg" />
- <itunes:duration>01:03:43</itunes:duration>
- <itunes:subtitle>People ​so close to each other, ​in ​extremely intimate situations​,​ who are also a million miles apart.
+ <itunes:explicit>false</itunes:explicit>
+ <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/rss_image/public/images/rss/tal-801-rats-charliehamiltonjames-sq.jpg?itok=he9q7afl" />
+ <enclosure url="https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR7388469053.mp3" type="audio/mpeg" />
+ <itunes:duration>01:12:04</itunes:duration>
+ <itunes:subtitle>The one animal we can’t seem to live without, even when we really, really want to.
 </itunes:subtitle>
- <itunes:summary>People ​so close to each other, ​in ​extremely intimate situations​,​ who are also a million miles apart.
+ <itunes:summary>The one animal we can’t seem to live without, even when we really, really want to.
 
 
-Prologue: Valerie Kipnis tells Ira about riding the subway, shoulder-to-shoulder with someone she knows quite well, pretending she doesn’t see him. (8 minutes)
 
-Act One: How much can you trust whether somebody who you think is close to you really is close to you? Saidu Tejan-Thomas Jr.’s been thinking about that question since a recent visit with some of his childhood friends in Sierra Leone. (37 minutes)
+Prologue: At the announcement of New York City’s inaugural rat czar, we meet Darneice Foster, who despises the rats outside her apartment. And host Ira Glass introduces two special co-hosts for today’s show. (11 minutes)
 
-Act Two: Comedian Tig Notaro has the story of someone as close as her actual bedside yet who, in another way, is impossibly far away. (9 minutes)</itunes:summary>
+Act One: Producer Elna Baker meets Todd Sklar, a man who can’t quit rats. (22 minutes)
+
+Act Two: Fifty years ago, New York City started to put garbage out in plastic bags. This has become the number one food source for rats. Producer Ike Sriskandarajah investigates the decision that led to the city’s rat baby boom. (10 minutes)
+
+Act Three: How did Alberta, Canada pull off a feat that has eluded the rest of human civilization? Ira visits the largest rat-less land in the world. (15 minutes)
+
+Act Four: We drop a hot mic into a hot mess of a rats’ nest. You’ll never believe what happens next. (3 minutes)</itunes:summary>
 </item>
 <item>
- <title>443: Amusement Park</title>
- <link>https://www.thisamericanlife.org/443/amusement-park</link>
- <description>&lt;p&gt;We head to some of the happiest places on earth: amusement parks! Ira Glass takes us behind the scenes at Worlds of Fun in Kansas City, where the young staff – coached by a funny, fun-loving boss just a little older than they are – truly seem to love their jobs.  
-&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Prologue: Host Ira Glass walks through a Kansas City Missouri amusement park called Worlds of Fun with Cole Lindbergh, who had a season pass to the park as a little kid, starting working there summers at 14, and then just stayed. Now he&#039;s a full-time, year-round employee, running the games department. It&#039;s possible he does this job better than anyone in the country. It&#039;s rare to witness someone so happily great at his job. (9 minutes)&lt;/li&gt;&lt;li&gt;Act One: Ira continues with Cole Lindbergh and the hundred teenagers who work for him
-in the games department at Worlds of Fun.  We watch them compete against
-each other to see who can do the most business, in Cole&#039;s Sweet Sixteen
-bracket tournament, which pits all 32 games in the park against each other.
-We hear about all the things Cole does that other games managers don&#039;t.  He
-invents games. He directs music videos starring his team.  (23 minutes)&lt;/li&gt;&lt;li&gt;Act Two: We asked for your stories about amusement parks.  Three hundred of you
-called in, with stories of fear, floating carnies and, um, vomit.  (9
-minutes)&lt;/li&gt;&lt;li&gt;Act Three: Jonathan Goldstein returns to Wildwood, New Jersey, where he spent one not-fateful summer when he was sixteen. Jonathan&#039;s the host of the podcast Heavyweight. (13 minutes)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Transcripts are available at &lt;a href=&quot;https://www.thisamericanlife.org/443/transcript&quot;&gt;thisamericanlife.org&lt;/a&gt;&lt;/p&gt;</description>
- <pubDate>Sun, 07 Jul 2024 18:00:00 -0400</pubDate>
- <guid isPermaLink="false">37230 at https://www.thisamericanlife.org</guid>
- <itunes:author>This American Life</itunes:author>
- <enclosure url="https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp3/chtbl.com/track/8DB4DB/pdst.fm/e/nyt.simplecastaudio.com/bbbcc290-ed3b-44a2-8e5d-5513e38cfe20/episodes/c03036c8-e213-46bf-8c72-fbd3db6e9368/audio/128/default.mp3?awCollectionId=bbbcc290-ed3b-44a2-8e5d-5513e38cfe20&amp;awEpisodeId=c03036c8-e213-46bf-8c72-fbd3db6e9368" type="audio/mpeg" />
- <itunes:duration>01:00:25</itunes:duration>
- <itunes:subtitle>We head to some of the happiest places on earth: amusement parks!
-</itunes:subtitle>
- <itunes:summary>We head to some of the happiest places on earth: amusement parks! Ira Glass takes us behind the scenes at Worlds of Fun in Kansas City, where the young staff – coached by a funny, fun-loving boss just a little older than they are – truly seem to love their jobs.  
-
-
-Prologue: Host Ira Glass walks through a Kansas City Missouri amusement park called Worlds of Fun with Cole Lindbergh, who had a season pass to the park as a little kid, starting working there summers at 14, and then just stayed. Now he&#039;s a full-time, year-round employee, running the games department. It&#039;s possible he does this job better than anyone in the country. It&#039;s rare to witness someone so happily great at his job. (9 minutes)
-
-Act One: Ira continues with Cole Lindbergh and the hundred teenagers who work for him
-in the games department at Worlds of Fun.  We watch them compete against
-each other to see who can do the most business, in Cole&#039;s Sweet Sixteen
-bracket tournament, which pits all 32 games in the park against each other.
-We hear about all the things Cole does that other games managers don&#039;t.  He
-invents games. He directs music videos starring his team.  (23 minutes)
-
-Act Two: We asked for your stories about amusement parks.  Three hundred of you
-called in, with stories of fear, floating carnies and, um, vomit.  (9
-minutes)
-
-Act Three: Jonathan Goldstein returns to Wildwood, New Jersey, where he spent one not-fateful summer when he was sixteen. Jonathan&#039;s the host of the podcast Heavyweight. (13 minutes)</itunes:summary>
+  <title>Christmas and Commerce</title>
+  <description>&lt;p&gt;Stories about the intersection of Christmas and retail, originally broadcast in 1996 when our show was only a year old. Including David Sedaris&#039;s &quot;Santaland Diaries&quot; about the seasons he spent working as an elf at Macy&#039;s.&lt;/p&gt;</description>
+  <pubDate>Wed, 24 Dec 2025 00:00:00 -0500</pubDate>
+  <guid isPermaLink="false">46077 at https://www.thisamericanlife.org</guid>
+  <enclosure url="https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR4815535274.mp3" type="audio/mpeg" />
+  <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/rss_image/public/images/rss/tal-47.jpg?itok=aVUFnmwl" />
+  <media:thumbnail url="https://www.thisamericanlife.org/" height="720" width="1280" />
+  <link>https://www.thisamericanlife.org/47/christmas-and-commerce</link>
+  <itunes:author>This American Life</itunes:author>
+  <itunes:duration>01:02:04</itunes:duration>
+  <itunes:subtitle>Stories about the intersection of Christmas and retail.</itunes:subtitle>
+  <itunes:summary>Stories about the intersection of Christmas and retail.</itunes:summary>
 </item>
 <item>
- <title>835: Children of Dave</title>
- <link>https://www.thisamericanlife.org/835/children-of-dave</link>
- <description>&lt;p&gt;Boen Wang has a theory that a lot of the misery in his life can be traced to a single moment that happened years before he was born. So he makes a pilgrimage to see if he’s right.
-&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Prologue: Ira talks about what it’s like to go back to 1119 Bayard Street in Baltimore. (6 minutes)&lt;/li&gt;&lt;li&gt;Part One: Boen visits Norman, Oklahoma, where he was born, to meet the man he thinks changed his parents’ lives—and his life, too. (31 minutes)&lt;/li&gt;&lt;li&gt;Part Two: Boen’s friend, Andrew, and his parents take what he learned in Part One, throw it into a blender, and push puree. (20 minutes)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Transcripts are available at &lt;a href=&quot;https://www.thisamericanlife.org/835/transcript&quot;&gt;thisamericanlife.org&lt;/a&gt;&lt;/p&gt;</description>
- <pubDate>Sun, 30 Jun 2024 18:00:00 -0400</pubDate>
- <guid isPermaLink="false">45650 at https://www.thisamericanlife.org</guid>
+ <title>877: The Making Of </title>
+ <link>https://www.thisamericanlife.org/877/the-making-of</link>
+ <description>&lt;p&gt;How one block in Portland, Oregon became a movie-set war zone that lots of people think is a real war zone.
+
+&lt;/p&gt;&lt;p&gt;Visit &lt;a href=&quot;https://thisamericanlife.supercast.com&quot;&gt;thisamericanlife.org/lifepartners&lt;/a&gt; to sign up for our premium subscription — or to give one as a gift!&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Prologue: What the movie Hearts of Darkness and right-wing influencers have in common. (8 minutes)&lt;/li&gt;&lt;li&gt;Act One: Producers Zoe Chace and Suzanne Gaber follow a bunch of right-wing influencers as they search for Antifa in Portland. (31 minutes)&lt;/li&gt;&lt;li&gt;Act Two: We meet the so-called leader of Antifa in Portland. (16 minutes)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Transcripts are available at &lt;a href=&quot;https://www.thisamericanlife.org/877/transcript&quot;&gt;thisamericanlife.org&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#039;https://www.thisamericanlife.org/page/privacy-policy&#039;&gt;This American Life privacy policy.&lt;/a&gt;&lt;br /&gt;&lt;a href=&#039;https://podcastchoices.com/adchoices&#039;&gt;Learn more about sponsor message choices.&lt;/a&gt;&lt;/p&gt;</description>
+ <pubDate>Sun, 21 Dec 2025 18:00:00 -0500</pubDate>
+ <guid isPermaLink="false">46074 at https://www.thisamericanlife.org</guid>
+ <itunes:episodeType>full</itunes:episodeType>
+ <itunes:episode>877</itunes:episode>
+ <itunes:title>The Making Of </itunes:title>
  <itunes:author>This American Life</itunes:author>
- <enclosure url="https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp3/chtbl.com/track/8DB4DB/pdst.fm/e/nyt.simplecastaudio.com/bbbcc290-ed3b-44a2-8e5d-5513e38cfe20/episodes/8ec4e536-317e-4b7e-9a80-26844d893e0b/audio/128/default.mp3?awCollectionId=bbbcc290-ed3b-44a2-8e5d-5513e38cfe20&amp;awEpisodeId=8ec4e536-317e-4b7e-9a80-26844d893e0b" type="audio/mpeg" />
- <itunes:duration>01:01:10</itunes:duration>
- <itunes:subtitle>Boen Wang goes back to a day that changed the course of his family&#039;s story.
+ <itunes:explicit>false</itunes:explicit>
+ <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/rss_image/public/images/rss/tal-877-portland-ajdungo-sq2_0.jpg?itok=bwFkJcei" />
+ <enclosure url="https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR9476446844.mp3" type="audio/mpeg" />
+ <itunes:duration>01:01:01</itunes:duration>
+ <itunes:subtitle>How one block in Portland, Oregon became a movie-set war zone that lots of people think is a real war zone.
 </itunes:subtitle>
- <itunes:summary>Boen Wang has a theory that a lot of the misery in his life can be traced to a single moment that happened years before he was born. So he makes a pilgrimage to see if he’s right.
+ <itunes:summary>How one block in Portland, Oregon became a movie-set war zone that lots of people think is a real war zone.
 
 
-Prologue: Ira talks about what it’s like to go back to 1119 Bayard Street in Baltimore. (6 minutes)
 
-Part One: Boen visits Norman, Oklahoma, where he was born, to meet the man he thinks changed his parents’ lives—and his life, too. (31 minutes)
+Prologue: What the movie Hearts of Darkness and right-wing influencers have in common. (8 minutes)
 
-Part Two: Boen’s friend, Andrew, and his parents take what he learned in Part One, throw it into a blender, and push puree. (20 minutes)</itunes:summary>
+Act One: Producers Zoe Chace and Suzanne Gaber follow a bunch of right-wing influencers as they search for Antifa in Portland. (31 minutes)
+
+Act Two: We meet the so-called leader of Antifa in Portland. (16 minutes)</itunes:summary>
 </item>
 <item>
- <title>834: Yousef and the Fourth Move</title>
- <link>https://www.thisamericanlife.org/834/yousef-and-the-fourth-move</link>
- <description>&lt;p&gt;In Rafah, Yousef is out of options and faces his toughest move yet.
-&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Prologue: Since the beginning of the war in Gaza, Yousef Hammash has decided where to go next and when. In Rafah, he is out of options and faces his toughest move yet. (5 minutes)&lt;/li&gt;&lt;li&gt;Act One: Yousef does not even want to think about leaving Gaza. (18 minutes)&lt;/li&gt;&lt;li&gt;Act Two: The actual price — in cash — of getting out of Gaza. (31 minutes)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Transcripts are available at &lt;a href=&quot;https://www.thisamericanlife.org/834/transcript&quot;&gt;thisamericanlife.org&lt;/a&gt;&lt;/p&gt;</description>
- <pubDate>Sun, 16 Jun 2024 18:00:00 -0400</pubDate>
- <guid isPermaLink="false">45633 at https://www.thisamericanlife.org</guid>
+ <title>255: Our Holiday Gift-Giving Guide</title>
+ <link>https://www.thisamericanlife.org/255/our-holiday-gift-giving-guide</link>
+ <description>&lt;p&gt;The vexing difficulty of finding the perfect gift.
+
+&lt;/p&gt;&lt;p&gt;Visit &lt;a href=&quot;https://thisamericanlife.supercast.com&quot;&gt;thisamericanlife.org/lifepartners&lt;/a&gt; to sign up for our premium subscription.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Prologue: Host Ira Glass goes to a busy Target store one week before Christmas. Most shoppers he talks to don&#039;t think any of their gifts will be returned. (3 minutes)&lt;/li&gt;&lt;li&gt;Act One: Ian Brown tries, after decades of failure, to give his mother the perfect Christmas gift. He and his brother attempt something they haven&#039;t done since they were kids: Rehearse and sing her a program of Christmas carols. (19 minutes)&lt;/li&gt;&lt;li&gt;Act Two: We play a 1959 original recording of Truman Capote reading his holiday story A Christmas Memory. (18 minutes)&lt;/li&gt;&lt;li&gt;Act Three: Caitlin Shetterly reports on a true-life holiday fable from rural Maine, complete with a misunderstood recluse with a heart of gold, a deserving family in need, and a very special Christmas tree farm with secrets of its own. (16 minutes)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Transcripts are available at &lt;a href=&quot;https://www.thisamericanlife.org/255/transcript&quot;&gt;thisamericanlife.org&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#039;https://www.thisamericanlife.org/page/privacy-policy&#039;&gt;This American Life privacy policy.&lt;/a&gt;&lt;br /&gt;&lt;a href=&#039;https://podcastchoices.com/adchoices&#039;&gt;Learn more about sponsor message choices.&lt;/a&gt;&lt;/p&gt;</description>
+ <pubDate>Sun, 14 Dec 2025 18:00:00 -0500</pubDate>
+ <guid isPermaLink="false">37418 at https://www.thisamericanlife.org</guid>
+ <itunes:episodeType>full</itunes:episodeType>
+ <itunes:episode>255</itunes:episode>
+ <itunes:title>Our Holiday Gift-Giving Guide</itunes:title>
  <itunes:author>This American Life</itunes:author>
- <enclosure url="https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp3/chtbl.com/track/8DB4DB/pdst.fm/e/nyt.simplecastaudio.com/bbbcc290-ed3b-44a2-8e5d-5513e38cfe20/episodes/b2d1490e-f8b1-413a-be5f-0fbe855deb51/audio/128/default.mp3?awCollectionId=bbbcc290-ed3b-44a2-8e5d-5513e38cfe20&amp;awEpisodeId=b2d1490e-f8b1-413a-be5f-0fbe855deb51" type="audio/mpeg" />
- <itunes:duration>00:58:11</itunes:duration>
- <itunes:subtitle>In Rafah, Yousef is out of options and faces his toughest move yet.
+ <itunes:explicit>false</itunes:explicit>
+ <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/rss_image/public/images/rss/tal-255-holidaygiftgiving-sq.jpg?itok=5TWn1_tz" />
+ <enclosure url="https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR2389843838.mp3" type="audio/mpeg" />
+ <itunes:duration>01:01:04</itunes:duration>
+ <itunes:subtitle>The vexing difficulty of finding the perfect gift.
 </itunes:subtitle>
- <itunes:summary>In Rafah, Yousef is out of options and faces his toughest move yet.
+ <itunes:summary>The vexing difficulty of finding the perfect gift.
 
 
-Prologue: Since the beginning of the war in Gaza, Yousef Hammash has decided where to go next and when. In Rafah, he is out of options and faces his toughest move yet. (5 minutes)
 
-Act One: Yousef does not even want to think about leaving Gaza. (18 minutes)
+Prologue: Host Ira Glass goes to a busy Target store one week before Christmas. Most shoppers he talks to don&#039;t think any of their gifts will be returned. (3 minutes)
 
-Act Two: The actual price — in cash — of getting out of Gaza. (31 minutes)</itunes:summary>
+Act One: Ian Brown tries, after decades of failure, to give his mother the perfect Christmas gift. He and his brother attempt something they haven&#039;t done since they were kids: Rehearse and sing her a program of Christmas carols. (19 minutes)
+
+Act Two: We play a 1959 original recording of Truman Capote reading his holiday story A Christmas Memory. (18 minutes)
+
+Act Three: Caitlin Shetterly reports on a true-life holiday fable from rural Maine, complete with a misunderstood recluse with a heart of gold, a deserving family in need, and a very special Christmas tree farm with secrets of its own. (16 minutes)</itunes:summary>
 </item>
 <item>
- <title>833: Come Retribution</title>
- <link>https://www.thisamericanlife.org/833/come-retribution</link>
- <description>&lt;p&gt;Donald Trump has talked about taking retribution on his enemies since the early days of his 2024 presidential campaign. After his conviction last week in New York, his talk intensified. We try to understand what his retribution might look like by speaking with people who have the most to lose in a second Trump administration: people who believe Trump will be coming for them.
-&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Prologue: Donald Trump has talked about taking revenge on his enemies since the early days of his 2024 presidential campaign. Ira Glass talks to reporter Jonathan Karl about how Trump has placed retribution at the center of his run and what we know about how he’s thinking about it. (16 minutes)&lt;/li&gt;&lt;li&gt;Act One: Reporter Alix Spiegel talks to two people with good reason to fear a second Trump administration. Former White House Press Secretary Stephanie Grisham spent six years with the Trumps but resigned after January 6th and wrote a scathing tell-all book about her experience. Fred Wellman worked for The Lincoln Project - a group of high-profile Republicans who pledged to keep Trump out of office during the 2020 campaign. (22 minutes)&lt;/li&gt;&lt;li&gt;Act Two: Alex Vindman became the face of the first Trump impeachment after he reported to his superiors that Trump had asked the President of Ukraine to investigate Hunter Biden, the son of his political opponent. At the time, Vindman believed that his Congressional testimony would not jeopardize him; now, he and his wife Rachel are having second thoughts. (14 minutes)&lt;/li&gt;&lt;li&gt;Act Three: After hearing from people who dread a possible second Trump term, we hear from those who are excited about it. Reporter Zoe Chace checks into whether his supporters are excited for retribution. (7 minutes)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Transcripts are available at &lt;a href=&quot;https://www.thisamericanlife.org/833/transcript&quot;&gt;thisamericanlife.org&lt;/a&gt;&lt;/p&gt;</description>
- <pubDate>Sun, 09 Jun 2024 18:00:00 -0400</pubDate>
- <guid isPermaLink="false">45631 at https://www.thisamericanlife.org</guid>
+ <title>876: Bigger Than Me</title>
+ <link>https://www.thisamericanlife.org/876/bigger-than-me</link>
+ <description>&lt;p&gt;When history comes knocking, you have to figure out what to do.
+
+&lt;/p&gt;&lt;p&gt;Visit &lt;a href=&quot;https://thisamericanlife.supercast.com&quot;&gt;thisamericanlife.org/lifepartners&lt;/a&gt; to sign up for our premium subscription.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Prologue: Brittany’s job is to answer anonymous calls and texts from people in the military. This year, she’s gotten more than usual–most of them are wondering about what to do with orders they’ve been given. Or orders they’re afraid they’ll get someday in the future. (9 minutes)&lt;/li&gt;&lt;li&gt;Act One: Jad Abumrad tells the story of the &quot;ideological genealogy” of Fela Kuti’s anti-colonial politics–his mother. In late 1940s Nigeria, Funmilayo Ransome-Kuti found herself at the center of a big, historical moment: an uprising led by thousands of women selling goods in Nigeria’s markets. Jad goes searching for who she really was, and how she became the person who galvanized a movement when history demanded it of her. (45 minutes)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Transcripts are available at &lt;a href=&quot;https://www.thisamericanlife.org/876/transcript&quot;&gt;thisamericanlife.org&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#039;https://www.thisamericanlife.org/page/privacy-policy&#039;&gt;This American Life privacy policy.&lt;/a&gt;&lt;br /&gt;&lt;a href=&#039;https://podcastchoices.com/adchoices&#039;&gt;Learn more about sponsor message choices.&lt;/a&gt;&lt;/p&gt;</description>
+ <pubDate>Sun, 07 Dec 2025 18:00:00 -0500</pubDate>
+ <guid isPermaLink="false">46068 at https://www.thisamericanlife.org</guid>
+ <itunes:episodeType>full</itunes:episodeType>
+ <itunes:episode>876</itunes:episode>
+ <itunes:title>Bigger Than Me</itunes:title>
  <itunes:author>This American Life</itunes:author>
- <enclosure url="https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp3/chtbl.com/track/8DB4DB/pdst.fm/e/nyt.simplecastaudio.com/bbbcc290-ed3b-44a2-8e5d-5513e38cfe20/episodes/ee29be30-6d6c-476e-9a47-f37ae94b2f7f/audio/128/default.mp3?awCollectionId=bbbcc290-ed3b-44a2-8e5d-5513e38cfe20&amp;awEpisodeId=ee29be30-6d6c-476e-9a47-f37ae94b2f7f" type="audio/mpeg" />
- <itunes:duration>01:04:14</itunes:duration>
- <itunes:subtitle>Donald Trump has a plan for his second term: retribution. We check in with the people who’ve crossed him to hear how they feel about that.
+ <itunes:explicit>false</itunes:explicit>
+ <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/rss_image/public/images/rss/funmilayo-ransome-kuti-sq.jpg?itok=CYJplqN6" />
+ <enclosure url="https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR3654508416.mp3" type="audio/mpeg" />
+ <itunes:duration>01:00:05</itunes:duration>
+ <itunes:subtitle>When history comes knocking, you have to figure out what to do.
 </itunes:subtitle>
- <itunes:summary>Donald Trump has talked about taking retribution on his enemies since the early days of his 2024 presidential campaign. After his conviction last week in New York, his talk intensified. We try to understand what his retribution might look like by speaking with people who have the most to lose in a second Trump administration: people who believe Trump will be coming for them.
+ <itunes:summary>When history comes knocking, you have to figure out what to do.
 
 
-Prologue: Donald Trump has talked about taking revenge on his enemies since the early days of his 2024 presidential campaign. Ira Glass talks to reporter Jonathan Karl about how Trump has placed retribution at the center of his run and what we know about how he’s thinking about it. (16 minutes)
 
-Act One: Reporter Alix Spiegel talks to two people with good reason to fear a second Trump administration. Former White House Press Secretary Stephanie Grisham spent six years with the Trumps but resigned after January 6th and wrote a scathing tell-all book about her experience. Fred Wellman worked for The Lincoln Project - a group of high-profile Republicans who pledged to keep Trump out of office during the 2020 campaign. (22 minutes)
+Prologue: Brittany’s job is to answer anonymous calls and texts from people in the military. This year, she’s gotten more than usual–most of them are wondering about what to do with orders they’ve been given. Or orders they’re afraid they’ll get someday in the future. (9 minutes)
 
-Act Two: Alex Vindman became the face of the first Trump impeachment after he reported to his superiors that Trump had asked the President of Ukraine to investigate Hunter Biden, the son of his political opponent. At the time, Vindman believed that his Congressional testimony would not jeopardize him; now, he and his wife Rachel are having second thoughts. (14 minutes)
-
-Act Three: After hearing from people who dread a possible second Trump term, we hear from those who are excited about it. Reporter Zoe Chace checks into whether his supporters are excited for retribution. (7 minutes)</itunes:summary>
+Act One: Jad Abumrad tells the story of the &quot;ideological genealogy” of Fela Kuti’s anti-colonial politics–his mother. In late 1940s Nigeria, Funmilayo Ransome-Kuti found herself at the center of a big, historical moment: an uprising led by thousands of women selling goods in Nigeria’s markets. Jad goes searching for who she really was, and how she became the person who galvanized a movement when history demanded it of her. (45 minutes)</itunes:summary>
 </item>
 <item>
- <title>832: That Other Guy</title>
- <link>https://www.thisamericanlife.org/832/that-other-guy</link>
- <description>&lt;p&gt;People tethered to one particular other person, whether they want to be or not.
-&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Prologue: Guest host Emmanuel Dzotsi talks to Leroy Smith about how one high school basketball tryout forever changed Leroy’s relationship to a childhood friend. (7 minutes)&lt;/li&gt;&lt;li&gt;Act One: A man finds himself sucked into an intense head-to-head running competition against a perfect rival – all for free burritos from Chipotle. (18 minutes)&lt;/li&gt;&lt;li&gt;Act Two: Writer Simon Rich grapples with an A.I. chatbot that threatens to make him obsolete. (21 minutes)&lt;/li&gt;&lt;li&gt;Act Three: For writer Marie Phillips, moving in with her partner meant finding herself deeply connected to the woman who came before her. (12 minutes)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Transcripts are available at &lt;a href=&quot;https://www.thisamericanlife.org/832/transcript&quot;&gt;thisamericanlife.org&lt;/a&gt;&lt;/p&gt;</description>
- <pubDate>Sun, 02 Jun 2024 18:00:00 -0400</pubDate>
- <guid isPermaLink="false">45616 at https://www.thisamericanlife.org</guid>
+ <title>875: I Hate Mysteries</title>
+ <link>https://www.thisamericanlife.org/875/i-hate-mysteries</link>
+ <description>&lt;p&gt;What’s in the box? What’s in the $%&amp;amp;ing box?!?
+
+&lt;/p&gt;&lt;p&gt;Visit &lt;a href=&quot;https://thisamericanlife.supercast.com&quot;&gt;thisamericanlife.org/lifepartners&lt;/a&gt; to sign up for our premium subscription.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Prologue: A class of second graders is handed a sealed box with a mystery object inside. They are supposed to guess what it is, but the lesson goes off the rails. (8 minutes)&lt;/li&gt;&lt;li&gt;Act One: A man is hired along with a crew to dig a mysterious hole on the slopes of Mt. Shasta. The hole goes sixty feet down. But what are they looking for? (24 minutes)&lt;/li&gt;&lt;li&gt;Act 2: A sparkly mystery. One woman hopes the military-industrial complex is involved. (4 minutes)&lt;/li&gt;&lt;li&gt;Act Two: What happens when the full force of the federal government arrives on your block? (14 minutes)&lt;/li&gt;&lt;li&gt;Act Three: A comedian finds himself trapped in an uncomfortable mystery in the backseat of a cab. (4 minutes)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Transcripts are available at &lt;a href=&quot;https://www.thisamericanlife.org/875/transcript&quot;&gt;thisamericanlife.org&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#039;https://www.thisamericanlife.org/page/privacy-policy&#039;&gt;This American Life privacy policy.&lt;/a&gt;&lt;br /&gt;&lt;a href=&#039;https://podcastchoices.com/adchoices&#039;&gt;Learn more about sponsor message choices.&lt;/a&gt;&lt;/p&gt;</description>
+ <pubDate>Sun, 23 Nov 2025 18:00:00 -0500</pubDate>
+ <guid isPermaLink="false">46059 at https://www.thisamericanlife.org</guid>
+ <itunes:episodeType>full</itunes:episodeType>
+ <itunes:episode>875</itunes:episode>
+ <itunes:title>I Hate Mysteries</itunes:title>
  <itunes:author>This American Life</itunes:author>
- <enclosure url="https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp3/chtbl.com/track/8DB4DB/pdst.fm/e/nyt.simplecastaudio.com/bbbcc290-ed3b-44a2-8e5d-5513e38cfe20/episodes/ee3ed3fd-519a-4405-8ffa-b953b4614d70/audio/128/default.mp3?awCollectionId=bbbcc290-ed3b-44a2-8e5d-5513e38cfe20&amp;awEpisodeId=ee3ed3fd-519a-4405-8ffa-b953b4614d70" type="audio/mpeg" />
- <itunes:duration>01:04:29</itunes:duration>
- <itunes:subtitle>People tethered to one particular other person, whether they want to be or not.
+ <itunes:explicit>false</itunes:explicit>
+ <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/rss_image/public/images/rss/tal-875-foryoutofindout-peterryan-sq.jpg?itok=QEu4bkui" />
+ <enclosure url="https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR6726342547.mp3" type="audio/mpeg" />
+ <itunes:duration>01:02:53</itunes:duration>
+ <itunes:subtitle>What’s in the box? What’s in the $%&amp;amp;ing box?!?
 </itunes:subtitle>
- <itunes:summary>People tethered to one particular other person, whether they want to be or not.
+ <itunes:summary>What’s in the box? What’s in the $%&amp;amp;ing box?!?
 
 
-Prologue: Guest host Emmanuel Dzotsi talks to Leroy Smith about how one high school basketball tryout forever changed Leroy’s relationship to a childhood friend. (7 minutes)
 
-Act One: A man finds himself sucked into an intense head-to-head running competition against a perfect rival – all for free burritos from Chipotle. (18 minutes)
+Prologue: A class of second graders is handed a sealed box with a mystery object inside. They are supposed to guess what it is, but the lesson goes off the rails. (8 minutes)
 
-Act Two: Writer Simon Rich grapples with an A.I. chatbot that threatens to make him obsolete. (21 minutes)
+Act One: A man is hired along with a crew to dig a mysterious hole on the slopes of Mt. Shasta. The hole goes sixty feet down. But what are they looking for? (24 minutes)
 
-Act Three: For writer Marie Phillips, moving in with her partner meant finding herself deeply connected to the woman who came before her. (12 minutes)</itunes:summary>
+Act 2: A sparkly mystery. One woman hopes the military-industrial complex is involved. (4 minutes)
+
+Act Two: What happens when the full force of the federal government arrives on your block? (14 minutes)
+
+Act Three: A comedian finds himself trapped in an uncomfortable mystery in the backseat of a cab. (4 minutes)</itunes:summary>
 </item>
 <item>
- <title>831: Lists!!!</title>
- <link>https://www.thisamericanlife.org/831/lists</link>
- <description>&lt;p&gt;How they organize the chaos of the world, for good and for bad.
-&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Prologue: Ira interviews David Wallechinsky, who wrote a wildly popular book in the 1970s called The Book of Lists, full of trivia and research, gathered into lists like &quot;18 Brains&quot; and &quot;What They Weighed.&quot; The book sold millions of copies and had four sequels and a brief spin-off TV show. The list books were like the internet, before the internet. (12 minutes)&lt;/li&gt;&lt;li&gt;Act One: John Fecile talks to his brother, Pat, about a list their other brother made before he died. They each have different ideas about what the list means and how they feel about it. (14 minutes)&lt;/li&gt;&lt;li&gt;Act 2: A brief visit with Bobby, who keeps a list in his phone of all the dogs in his neighborhood and their names to save him from the awkwardness of not knowing the name of someone’s dog – because people get upset if you don’t remember their dog’s name. (3 minutes)&lt;/li&gt;&lt;li&gt;Act Two: Reporter Masha Gessen talks to Russians living in America and elsewhere, about lists they’ve been put on by the Russian government in the last few years. Masha is also on one of these lists. Each list has its own complex rules and potential consequences, for the people on the lists and for their family members who live in Russia. (28 minutes)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Transcripts are available at &lt;a href=&quot;https://www.thisamericanlife.org/831/transcript&quot;&gt;thisamericanlife.org&lt;/a&gt;&lt;/p&gt;</description>
- <pubDate>Sun, 26 May 2024 18:00:00 -0400</pubDate>
- <guid isPermaLink="false">45610 at https://www.thisamericanlife.org</guid>
+ <title>874: Under One Roof</title>
+ <link>https://www.thisamericanlife.org/874/under-one-roof</link>
+ <description>&lt;p&gt;What’s great about living in a family is that everyone sees everything differently. Also, that’s what’s awful about living in a family. We go behind closed doors with two families.  
+
+&lt;/p&gt;&lt;p&gt;Visit &lt;a href=&quot;https://thisamericanlife.supercast.com&quot;&gt;thisamericanlife.org/lifepartners&lt;/a&gt; to sign up for our premium subscription.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Prologue: When Heather Gay started taking steps away from Mormonism, she thought it was her secret. That her daughters had no idea. Until she talked to them about their mismatched memories. (17 minutes)&lt;/li&gt;&lt;li&gt;Act One: In every house, behind every closed door, a private drama is unfolding. In the Rivera house, the drama comes in the form of a question: should they stay or should they go? This question winds its way around the house until someone finally answers it. (44 minutes)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Transcripts are available at &lt;a href=&quot;https://www.thisamericanlife.org/874/transcript&quot;&gt;thisamericanlife.org&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#039;https://www.thisamericanlife.org/page/privacy-policy&#039;&gt;This American Life privacy policy.&lt;/a&gt;&lt;br /&gt;&lt;a href=&#039;https://podcastchoices.com/adchoices&#039;&gt;Learn more about sponsor message choices.&lt;/a&gt;&lt;/p&gt;</description>
+ <pubDate>Sun, 16 Nov 2025 18:00:00 -0500</pubDate>
+ <guid isPermaLink="false">46041 at https://www.thisamericanlife.org</guid>
+ <itunes:episodeType>full</itunes:episodeType>
+ <itunes:episode>874</itunes:episode>
+ <itunes:title>Under One Roof</itunes:title>
  <itunes:author>This American Life</itunes:author>
- <enclosure url="https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp3/chtbl.com/track/8DB4DB/pdst.fm/e/nyt.simplecastaudio.com/bbbcc290-ed3b-44a2-8e5d-5513e38cfe20/episodes/373eda1d-78f2-47c5-8905-049186415ace/audio/128/default.mp3?awCollectionId=bbbcc290-ed3b-44a2-8e5d-5513e38cfe20&amp;awEpisodeId=373eda1d-78f2-47c5-8905-049186415ace" type="audio/mpeg" />
- <itunes:duration>01:02:35</itunes:duration>
- <itunes:subtitle>How they organize the chaos of the world, for good and for bad.
+ <itunes:explicit>false</itunes:explicit>
+ <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/rss_image/public/images/rss/under-one-roof_sq.jpg?itok=fIAZVWb7" />
+ <enclosure url="https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR1170536702.mp3" type="audio/mpeg" />
+ <itunes:duration>01:05:24</itunes:duration>
+ <itunes:subtitle>Behind closed doors with two families.  
 </itunes:subtitle>
- <itunes:summary>How they organize the chaos of the world, for good and for bad.
+ <itunes:summary>What’s great about living in a family is that everyone sees everything differently. Also, that’s what’s awful about living in a family. We go behind closed doors with two families.  
 
 
-Prologue: Ira interviews David Wallechinsky, who wrote a wildly popular book in the 1970s called The Book of Lists, full of trivia and research, gathered into lists like &quot;18 Brains&quot; and &quot;What They Weighed.&quot; The book sold millions of copies and had four sequels and a brief spin-off TV show. The list books were like the internet, before the internet. (12 minutes)
 
-Act One: John Fecile talks to his brother, Pat, about a list their other brother made before he died. They each have different ideas about what the list means and how they feel about it. (14 minutes)
+Prologue: When Heather Gay started taking steps away from Mormonism, she thought it was her secret. That her daughters had no idea. Until she talked to them about their mismatched memories. (17 minutes)
 
-Act 2: A brief visit with Bobby, who keeps a list in his phone of all the dogs in his neighborhood and their names to save him from the awkwardness of not knowing the name of someone’s dog – because people get upset if you don’t remember their dog’s name. (3 minutes)
-
-Act Two: Reporter Masha Gessen talks to Russians living in America and elsewhere, about lists they’ve been put on by the Russian government in the last few years. Masha is also on one of these lists. Each list has its own complex rules and potential consequences, for the people on the lists and for their family members who live in Russia. (28 minutes)</itunes:summary>
+Act One: In every house, behind every closed door, a private drama is unfolding. In the Rivera house, the drama comes in the form of a question: should they stay or should they go? This question winds its way around the house until someone finally answers it. (44 minutes)</itunes:summary>
 </item>
 <item>
- <title>830: The Forever Trial</title>
- <link>https://www.thisamericanlife.org/830/the-forever-trial</link>
- <description>&lt;p&gt;The trial for the men accused of orchestrating the September 11 terrorist attacks still hasn’t started yet. Family members of those who died that day are still hoping for some kind of accountability, more than 22 years later. This week, the story of how one victim’s sister is navigating this historic and twisted trial.
-&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Prologue: Host Ira Glass introduces the new series that Serial is doing about Guantánamo Bay. This is the second of two episodes of theirs that we’re airing. (2 minutes)&lt;/li&gt;&lt;li&gt;Act One: We meet Colleen Kelly, a member of September 11th Families for Peaceful Tomorrows, and learn just how upside down and messed up the trial for the 9/11 accused has been over the past decade. (28 minutes)&lt;/li&gt;&lt;li&gt;Act Two: Sarah Koenig explains what’s probably the best possible outcome that everyone can hope for at this point. And why, when it hits the news someday — if it ever happens — it’s sure to be deeply misunderstood by lots of people. Plus a trip to Guantánamo with Colleen. (31 minutes)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Transcripts are available at &lt;a href=&quot;https://www.thisamericanlife.org/830/transcript&quot;&gt;thisamericanlife.org&lt;/a&gt;&lt;/p&gt;</description>
- <pubDate>Sun, 19 May 2024 18:00:00 -0400</pubDate>
- <guid isPermaLink="false">45604 at https://www.thisamericanlife.org</guid>
+ <title>873: Got You Pegged</title>
+ <link>https://www.thisamericanlife.org/873/got-you-pegged</link>
+ <description>&lt;p&gt;Shalom Auslander goes on vacation with his family, suspects the beloved, chatty old man in the room next door is an imposter, and sets out to prove it. This and other stories about the pitfalls of making snap judgments about others.
+
+&lt;/p&gt;&lt;p&gt;Visit &lt;a href=&quot;https://thisamericanlife.supercast.com&quot;&gt;thisamericanlife.org/lifepartners&lt;/a&gt; to sign up for our premium subscription.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Prologue: Amy Roberts thought it was obvious that she was an adult, not a kid, and she assumed the friendly man working at the children&#039;s museum knew it too. Unfortunately, the man had Amy pegged all wrong. And by the time she figured it out, it was too late for either of them to save face. Host Ira Glass talks to Amy about the embarrassing ordeal that taught her never to assume she knows what someone else is thinking. (8 minutes)&lt;/li&gt;&lt;li&gt;Act One: While riding in a patrol car to research a novel, crime writer Richard Price witnessed a misunderstanding that, for many people, is pretty much accepted as an upsetting fact of life. Richard Price told this story, which he describes as a tale taken from real life and dramatized, onstage at The Moth in New York. (12 minutes)&lt;/li&gt;&lt;li&gt;Act Two: There are situations where making judgments about people based on limited information is not only accepted but required. One of those situations is open adoption, where birth mothers actually choose the adoptive parents for their child. Producer Nancy Updike talks to a pregnant woman named Kim, going through the first stage of open adoption: reading dozens of letters from prospective parents, all of whom seem utterly capable and appealing. (6 minutes)&lt;/li&gt;&lt;li&gt;Act Three: David Rakoff picks a fight with a hit Broadway show. (6 minutes)&lt;/li&gt;&lt;li&gt;Act Four: Shalom Auslander tells the story of the time he went on vacation, pegged the guest in the room next door as an imposter, and devoted his holiday to trying to prove it. Shalom is the author of Feh: a Memoir. (22 minutes)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Transcripts are available at &lt;a href=&quot;https://www.thisamericanlife.org/873/transcript&quot;&gt;thisamericanlife.org&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#039;https://www.thisamericanlife.org/page/privacy-policy&#039;&gt;This American Life privacy policy.&lt;/a&gt;&lt;br /&gt;&lt;a href=&#039;https://podcastchoices.com/adchoices&#039;&gt;Learn more about sponsor message choices.&lt;/a&gt;&lt;/p&gt;</description>
+ <pubDate>Sun, 09 Nov 2025 18:00:00 -0500</pubDate>
+ <guid isPermaLink="false">46047 at https://www.thisamericanlife.org</guid>
+ <itunes:episodeType>full</itunes:episodeType>
+ <itunes:episode>873</itunes:episode>
+ <itunes:title>Got You Pegged</itunes:title>
  <itunes:author>This American Life</itunes:author>
- <enclosure url="https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp3/chtbl.com/track/8DB4DB/pdst.fm/e/nyt.simplecastaudio.com/bbbcc290-ed3b-44a2-8e5d-5513e38cfe20/episodes/8a1febd6-6541-43a9-812f-4b2ef1d06eec/audio/128/default.mp3?awCollectionId=bbbcc290-ed3b-44a2-8e5d-5513e38cfe20&amp;awEpisodeId=8a1febd6-6541-43a9-812f-4b2ef1d06eec" type="audio/mpeg" />
- <itunes:duration>01:02:33</itunes:duration>
- <itunes:subtitle>The trial for the men accused of orchestrating the September 11 terrorist attacks still hasn’t started yet. 
+ <itunes:explicit>false</itunes:explicit>
+ <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/rss_image/public/images/rss/tal-362-sq_0.jpg?itok=jd-iOtxG" />
+ <enclosure url="https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR6792693909.mp3" type="audio/mpeg" />
+ <itunes:duration>01:01:46</itunes:duration>
+ <itunes:subtitle>The pitfalls of making snap judgments about others.
 </itunes:subtitle>
- <itunes:summary>The trial for the men accused of orchestrating the September 11 terrorist attacks still hasn’t started yet. Family members of those who died that day are still hoping for some kind of accountability, more than 22 years later. This week, the story of how one victim’s sister is navigating this historic and twisted trial.
+ <itunes:summary>Shalom Auslander goes on vacation with his family, suspects the beloved, chatty old man in the room next door is an imposter, and sets out to prove it. This and other stories about the pitfalls of making snap judgments about others.
 
 
-Prologue: Host Ira Glass introduces the new series that Serial is doing about Guantánamo Bay. This is the second of two episodes of theirs that we’re airing. (2 minutes)
 
-Act One: We meet Colleen Kelly, a member of September 11th Families for Peaceful Tomorrows, and learn just how upside down and messed up the trial for the 9/11 accused has been over the past decade. (28 minutes)
+Prologue: Amy Roberts thought it was obvious that she was an adult, not a kid, and she assumed the friendly man working at the children&#039;s museum knew it too. Unfortunately, the man had Amy pegged all wrong. And by the time she figured it out, it was too late for either of them to save face. Host Ira Glass talks to Amy about the embarrassing ordeal that taught her never to assume she knows what someone else is thinking. (8 minutes)
 
-Act Two: Sarah Koenig explains what’s probably the best possible outcome that everyone can hope for at this point. And why, when it hits the news someday — if it ever happens — it’s sure to be deeply misunderstood by lots of people. Plus a trip to Guantánamo with Colleen. (31 minutes)</itunes:summary>
+Act One: While riding in a patrol car to research a novel, crime writer Richard Price witnessed a misunderstanding that, for many people, is pretty much accepted as an upsetting fact of life. Richard Price told this story, which he describes as a tale taken from real life and dramatized, onstage at The Moth in New York. (12 minutes)
+
+Act Two: There are situations where making judgments about people based on limited information is not only accepted but required. One of those situations is open adoption, where birth mothers actually choose the adoptive parents for their child. Producer Nancy Updike talks to a pregnant woman named Kim, going through the first stage of open adoption: reading dozens of letters from prospective parents, all of whom seem utterly capable and appealing. (6 minutes)
+
+Act Three: David Rakoff picks a fight with a hit Broadway show. (6 minutes)
+
+Act Four: Shalom Auslander tells the story of the time he went on vacation, pegged the guest in the room next door as an imposter, and devoted his holiday to trying to prove it. Shalom is the author of Feh: a Memoir. (22 minutes)</itunes:summary>
 </item>
 <item>
- <title>829: Two Ledgers</title>
- <link>https://www.thisamericanlife.org/829/two-ledgers</link>
- <description>&lt;p&gt;For years, Majid believed that if he could testify in court about what happened to him when he was held in a CIA black site, a judge and jury would give him a break. Finally, he got a chance to see if he was right.
-&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Prologue: Ira talks about the exciting new series that Serial is doing about Guantánamo Bay. We’re airing two of those episodes on the show – one this week and one next. (2 minutes)&lt;/li&gt;&lt;li&gt;Act One: Majid Khan struggled with his identity when he was young. And then he realized exactly who he wanted to be – a member of Al Qaeda, carrying out orders for Khalid Sheikh Mohammed. He did bad things. But are the things that the U.S. Government did to him worse than his actual crimes?  (38 minutes)&lt;/li&gt;&lt;li&gt;Act Two: Majid finally gets his day in court. At his sentencing hearing, he describes to the jury what his interrogators did to him. (20 minutes)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Transcripts are available at &lt;a href=&quot;https://www.thisamericanlife.org/829/transcript&quot;&gt;thisamericanlife.org&lt;/a&gt;&lt;/p&gt;</description>
- <pubDate>Sun, 12 May 2024 18:00:00 -0400</pubDate>
- <guid isPermaLink="false">45602 at https://www.thisamericanlife.org</guid>
+ <title>872: Winners</title>
+ <link>https://www.thisamericanlife.org/872/winners</link>
+ <description>&lt;p&gt;America loves winners—now more than ever. But how do you get to a win in 2025 America? We watch someone trying to score a win in a game whose rules are being made up as she plays. 
+
+&lt;/p&gt;&lt;p&gt;Visit &lt;a href=&quot;https://thisamericanlife.supercast.com&quot;&gt;thisamericanlife.org/lifepartners&lt;/a&gt; to sign up for our premium subscription.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Prologue: Ira talks to producer Diane Wu about an informal survey she’s done with the staff of This American Life about a phrase Ira says a lot that includes the word “winners.” (8 minutes)&lt;/li&gt;&lt;li&gt;Act One: Two people see one of President Trump’s first executive orders and get excited, and then get to work. (46 minutes)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Transcripts are available at &lt;a href=&quot;https://www.thisamericanlife.org/872/transcript&quot;&gt;thisamericanlife.org&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#039;https://www.thisamericanlife.org/page/privacy-policy&#039;&gt;This American Life privacy policy.&lt;/a&gt;&lt;br /&gt;&lt;a href=&#039;https://podcastchoices.com/adchoices&#039;&gt;Learn more about sponsor message choices.&lt;/a&gt;&lt;/p&gt;</description>
+ <pubDate>Sun, 02 Nov 2025 17:00:00 -0500</pubDate>
+ <guid isPermaLink="false">46035 at https://www.thisamericanlife.org</guid>
+ <itunes:episodeType>full</itunes:episodeType>
+ <itunes:episode>872</itunes:episode>
+ <itunes:title>Winners</itunes:title>
  <itunes:author>This American Life</itunes:author>
- <enclosure url="https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp3/chtbl.com/track/8DB4DB/pdst.fm/e/nyt.simplecastaudio.com/bbbcc290-ed3b-44a2-8e5d-5513e38cfe20/episodes/67ea2560-6f40-4c9a-bc11-61627cc915e7/audio/128/default.mp3?awCollectionId=bbbcc290-ed3b-44a2-8e5d-5513e38cfe20&amp;awEpisodeId=67ea2560-6f40-4c9a-bc11-61627cc915e7" type="audio/mpeg" />
- <itunes:duration>01:04:27</itunes:duration>
- <itunes:subtitle>Majid believed that if he could testify in court about what happened to him at a CIA black site, he would be given a break. Was he right?
+ <itunes:explicit>false</itunes:explicit>
+ <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/rss_image/public/images/rss/tal-872-winnersistock577312380-sq.jpg?itok=4ZOPyjp8" />
+ <enclosure url="https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR6970061584.mp3" type="audio/mpeg" />
+ <itunes:duration>00:58:47</itunes:duration>
+ <itunes:subtitle>We watch someone trying to score a win in a game whose rules are being made up as she plays. 
 </itunes:subtitle>
- <itunes:summary>For years, Majid believed that if he could testify in court about what happened to him when he was held in a CIA black site, a judge and jury would give him a break. Finally, he got a chance to see if he was right.
+ <itunes:summary>America loves winners—now more than ever. But how do you get to a win in 2025 America? We watch someone trying to score a win in a game whose rules are being made up as she plays. 
 
 
-Prologue: Ira talks about the exciting new series that Serial is doing about Guantánamo Bay. We’re airing two of those episodes on the show – one this week and one next. (2 minutes)
 
-Act One: Majid Khan struggled with his identity when he was young. And then he realized exactly who he wanted to be – a member of Al Qaeda, carrying out orders for Khalid Sheikh Mohammed. He did bad things. But are the things that the U.S. Government did to him worse than his actual crimes?  (38 minutes)
+Prologue: Ira talks to producer Diane Wu about an informal survey she’s done with the staff of This American Life about a phrase Ira says a lot that includes the word “winners.” (8 minutes)
 
-Act Two: Majid finally gets his day in court. At his sentencing hearing, he describes to the jury what his interrogators did to him. (20 minutes)</itunes:summary>
+Act One: Two people see one of President Trump’s first executive orders and get excited, and then get to work. (46 minutes)</itunes:summary>
+</item>
+<item>
+ <title>871: The Thing About Things</title>
+ <link>https://www.thisamericanlife.org/871/the-thing-about-things</link>
+ <description>&lt;p&gt;Three stories about the strange power inanimate objects can hold over us.
+
+&lt;/p&gt;&lt;p&gt;Visit &lt;a href=&quot;https://thisamericanlife.supercast.com&quot;&gt;thisamericanlife.org/lifepartners&lt;/a&gt; to sign up for our premium subscription.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Prologue: Nunzio gets caught in a kind of servile relationship—with a scooter. (8 minutes)&lt;/li&gt;&lt;li&gt;Act One: Ted was six when he first picked up a rock from the Petrified Forest National Park. Nearly 50 years later, he really wishes he hadn’t. Aviva DeKornfeld talked to him. (15 minutes)&lt;/li&gt;&lt;li&gt;Act Two: Heavyweight host Jonathan Goldstein leaps in to help a family, who are not entirely sure they want or need his help, get rid of their stuff. (31 minutes)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Transcripts are available at &lt;a href=&quot;https://www.thisamericanlife.org/871/transcript&quot;&gt;thisamericanlife.org&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#039;https://www.thisamericanlife.org/page/privacy-policy&#039;&gt;This American Life privacy policy.&lt;/a&gt;&lt;br /&gt;&lt;a href=&#039;https://podcastchoices.com/adchoices&#039;&gt;Learn more about sponsor message choices.&lt;/a&gt;&lt;/p&gt;</description>
+ <pubDate>Sun, 26 Oct 2025 18:00:00 -0400</pubDate>
+ <guid isPermaLink="false">46032 at https://www.thisamericanlife.org</guid>
+ <itunes:episodeType>full</itunes:episodeType>
+ <itunes:episode>871</itunes:episode>
+ <itunes:title>The Thing About Things</itunes:title>
+ <itunes:author>This American Life</itunes:author>
+ <itunes:explicit>false</itunes:explicit>
+ <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/rss_image/public/images/rss/tal-871-things-822880932-sq.jpg?itok=f7n-SFCV" />
+ <enclosure url="https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR7025895016.mp3" type="audio/mpeg" />
+ <itunes:duration>00:59:35</itunes:duration>
+ <itunes:subtitle>Three stories about the strange power inanimate objects can hold over us.
+</itunes:subtitle>
+ <itunes:summary>Three stories about the strange power inanimate objects can hold over us.
+
+
+
+Prologue: Nunzio gets caught in a kind of servile relationship—with a scooter. (8 minutes)
+
+Act One: Ted was six when he first picked up a rock from the Petrified Forest National Park. Nearly 50 years later, he really wishes he hadn’t. Aviva DeKornfeld talked to him. (15 minutes)
+
+Act Two: Heavyweight host Jonathan Goldstein leaps in to help a family, who are not entirely sure they want or need his help, get rid of their stuff. (31 minutes)</itunes:summary>
+</item>
+<item>
+  <title>An Update from Ira</title>
+  <description>&lt;p&gt;Ira Glass shares some news about This American Life&lt;/p&gt;
+
+&lt;p&gt;To sign up as a Life Partner, visit &lt;a href=&quot;https://thisamericanlife.supercast.com?utm_campaign=lifepartners&amp;amp;utm_source=rss&amp;amp;utm_medium=shownotes&quot;&gt;thisamericanlife.org/lifepartners&lt;/a&gt;&lt;/p&gt;</description>
+  <pubDate>Thu, 16 Oct 2025 00:00:00 -0400</pubDate>
+  <guid isPermaLink="false">46031 at https://www.thisamericanlife.org</guid>
+  <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/extra/life_partners_standalone_promo_10_15_2025_v2.mp3" type="audio/mpeg" />
+  <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/rss_image/public/images/rss/tal-logo-3000x3000.png?itok=PxodyAAB" />
+  <media:thumbnail url="https://www.thisamericanlife.org/" height="720" width="1280" />
+  <link>https://www.thisamericanlife.org/lifepartners</link>
+  <itunes:author>This American Life</itunes:author>
+  <itunes:duration>00:05:18</itunes:duration>
+  <itunes:subtitle>Ira Glass shares some news about This American Life</itunes:subtitle>
+  <itunes:summary>Ira Glass shares some news about This American Life</itunes:summary>
+</item>
+<item>
+ <title>870: My Other Self</title>
+ <link>https://www.thisamericanlife.org/870/my-other-self</link>
+ <description>&lt;p&gt;What happens when people create alternate versions of themselves and release them into the wild?
+
+&lt;/p&gt;&lt;p&gt;Visit &lt;a href=&quot;https://thisamericanlife.supercast.com?utm_source=rss&amp;utm_medium=shownotes&amp;utm_id=lifepartners&quot;&gt;thisamericanlife.org/lifepartners&lt;/a&gt; to sign up for our premium subscription.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Prologue: Host Ira Glass talks about a recent experience being interviewed and the realization that he was being asked about another version of himself. (4 minutes)&lt;/li&gt;&lt;li&gt;Act One: Reporter Evan Ratliff creates an AI version of himself and then sets it loose on the world. This story was adapted from Evan&#039;s podcast, Shell Game. (43 minutes)&lt;/li&gt;&lt;li&gt;Act Two: Emmanuel Dzotsi explores the phenomenon of people lying on first dates to project a better version of themselves. Plus, he gets into a very personal example from his own life. (8 minutes)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Transcripts are available at &lt;a href=&quot;https://www.thisamericanlife.org/870/transcript&quot;&gt;thisamericanlife.org&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#039;https://www.thisamericanlife.org/page/privacy-policy&#039;&gt;This American Life privacy policy.&lt;/a&gt;&lt;br /&gt;&lt;a href=&#039;https://podcastchoices.com/adchoices&#039;&gt;Learn more about sponsor message choices.&lt;/a&gt;&lt;/p&gt;</description>
+ <pubDate>Sun, 12 Oct 2025 18:00:00 -0400</pubDate>
+ <guid isPermaLink="false">46019 at https://www.thisamericanlife.org</guid>
+ <itunes:episodeType>full</itunes:episodeType>
+ <itunes:episode>870</itunes:episode>
+ <itunes:title>My Other Self</itunes:title>
+ <itunes:author>This American Life</itunes:author>
+ <itunes:explicit>false</itunes:explicit>
+ <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/rss_image/public/images/rss/tal-870-myotherself-sq.jpg?itok=aZ09mi8m" />
+ <enclosure url="https://pfx.vpixl.com/6qj4J/dts.podtrac.com/redirect.mp/pdst.fm/e/prefix.up.audio/s/traffic.megaphone.fm/NPR9417124313.mp3" type="audio/mpeg" />
+ <itunes:duration>01:01:46</itunes:duration>
+ <itunes:subtitle>What happens when people create alternate versions of themselves and release them into the wild?
+</itunes:subtitle>
+ <itunes:summary>What happens when people create alternate versions of themselves and release them into the wild?
+
+
+
+Prologue: Host Ira Glass talks about a recent experience being interviewed and the realization that he was being asked about another version of himself. (4 minutes)
+
+Act One: Reporter Evan Ratliff creates an AI version of himself and then sets it loose on the world. This story was adapted from Evan&#039;s podcast, Shell Game. (43 minutes)
+
+Act Two: Emmanuel Dzotsi explores the phenomenon of people lying on first dates to project a better version of themselves. Plus, he gets into a very personal example from his own life. (8 minutes)</itunes:summary>
+</item>
+<item>
+ <title>866: Watch Out for That Tree</title>
+ <link>https://www.thisamericanlife.org/866/watch-out-for-that-tree</link>
+ <description>&lt;p&gt;Small human plans that run into much larger obstacles.
+
+&lt;/p&gt;&lt;p&gt;Visit &lt;a href=&quot;https://thisamericanlife.supercast.com?utm_source=rss&amp;utm_medium=shownotes&amp;utm_id=lifepartners&quot;&gt;thisamericanlife.org/lifepartners&lt;/a&gt; to sign up for our premium subscription.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Prologue: Angela&#039;s dad, an accountant, made a spreadsheet to prepare for their family trip to a national park. But there are things you never think to put in a spreadsheet. (7 minutes)&lt;/li&gt;&lt;li&gt;Act One: A young couple, excited to start a new chapter in their lives, is suddenly put on a very different trajectory. (30 minutes)&lt;/li&gt;&lt;li&gt;Act Two: A sixteen-year-old plans out a prank, and a complete stranger from Honduras ends up in a million-dollar deal. What could go wrong? (25 minutes)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;Transcripts are available at &lt;a href=&quot;https://www.thisamericanlife.org/866/transcript&quot;&gt;thisamericanlife.org&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&#039;https://www.thisamericanlife.org/page/privacy-policy&#039;&gt;This American Life privacy policy.&lt;/a&gt;&lt;br /&gt;&lt;a href=&#039;https://podcastchoices.com/adchoices&#039;&gt;Learn more about sponsor message choices.&lt;/a&gt;&lt;/p&gt;</description>
+ <pubDate>Fri, 05 Sep 2025 00:00:00 -0400</pubDate>
+ <guid isPermaLink="false">45941 at https://www.thisamericanlife.org</guid>
+ <itunes:episodeType>full</itunes:episodeType>
+ <itunes:episode>866</itunes:episode>
+ <itunes:title>Watch Out for That Tree</itunes:title>
+ <itunes:author>This American Life</itunes:author>
+ <itunes:explicit>false</itunes:explicit>
+ <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/rss_image/public/images/rss/tal-866-sq.jpg?itok=JenMuC-y" />
+ <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/866/Q3U8tV1MUlYC9-IIyLbITiMImqcdqMPLJUKYINuYyV0/866.mp3" type="audio/mpeg" />
+ <itunes:duration>01:07:30</itunes:duration>
+ <itunes:subtitle>Small human plans that run into much larger obstacles.
+</itunes:subtitle>
+ <itunes:summary>Small human plans that run into much larger obstacles.
+
+
+
+Prologue: Angela&#039;s dad, an accountant, made a spreadsheet to prepare for their family trip to a national park. But there are things you never think to put in a spreadsheet. (7 minutes)
+
+Act One: A young couple, excited to start a new chapter in their lives, is suddenly put on a very different trajectory. (30 minutes)
+
+Act Two: A sixteen-year-old plans out a prank, and a complete stranger from Honduras ends up in a million-dollar deal. What could go wrong? (25 minutes)</itunes:summary>
+</item>
+<item>
+  <title>Bonus: Nancy's Deep Cuts</title>
+  <description>&lt;p&gt;Ira Glass talks with longtime producer Nancy Updike about the most personal stories they have put on the radio. This is a sample of the bonus episodes we regularly release to our This American Life Partners.&lt;/p&gt;
+
+&lt;p&gt;To gain access to all the bonus episodes AND help us keep making This American Life, join at &lt;a href=&quot;https://thisamericanlife.supercast.com?utm_source=rss&amp;amp;utm_medium=shownotes&amp;amp;utm_campaign=bonus-content-promo&amp;amp;utm_id=lifepartners&amp;amp;utm_content=20250718-nancydeepcuts&quot;&gt;thisamericanlife.org/lifepartners&lt;/a&gt;.&lt;/p&gt;</description>
+  <pubDate>Thu, 17 Jul 2025 00:00:00 -0400</pubDate>
+  <guid isPermaLink="false">45933 at https://www.thisamericanlife.org</guid>
+  <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/extra/nancy_deep_cuts_part_1_public_feed_07_18_2026_v3.mp3" type="audio/mpeg" />
+  <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/rss_image/public/images/rss/this_american_life_partners_-_teal.jpg?itok=mZBuUS4l" />
+  <media:thumbnail url="https://www.thisamericanlife.org/sites/default/files/youtube/this_american_life_partners_teal_yt.jpg" height="720" width="1280" />
+  <itunes:author>This American Life</itunes:author>
+  <itunes:duration>00:26:44</itunes:duration>
+  <link>https://www.thisamericanlife.org</link>
+  <itunes:subtitle>Ira Glass talks with Nancy Updike about the most personal stories they have put on the radio.</itunes:subtitle>
+  <itunes:summary>Ira Glass talks with Nancy Updike about the most personal stories they have put on the radio.</itunes:summary>
+</item>
+<item>
+  <title>A Big Announcement</title>
+  <description>&lt;p&gt;Ira Glass has news to share about some things happening here at This American Life.&lt;/p&gt;
+
+&lt;p&gt;To sign up as a Life Partner, visit &lt;a href=&quot;https://www.thisamericanlife.org/lifepartners&quot;&gt;thisamericanlife.org/lifepartners&lt;/a&gt;.&lt;/p&gt;</description>
+  <pubDate>Wed, 16 Oct 2024 00:00:00 -0400</pubDate>
+  <guid isPermaLink="false">45786 at https://www.thisamericanlife.org</guid>
+  <enclosure url="https://www.thisamericanlife.org/sites/default/files/audio/upload/extra/life_partners_promo_102524_update.mp3" type="audio/mpeg" />
+  <itunes:image href="https://www.thisamericanlife.org/sites/default/files/styles/rss_image/public/images/rss/channel_cover-this_american_life_partners_-_no_alpha.png?itok=bOrHWUOu" />
+  <media:thumbnail url="https://www.thisamericanlife.org/sites/default/files/youtube/tal-life_partners-16x9.jpg" height="720" width="1280" />
+  <itunes:author>This American Life</itunes:author>
+  <itunes:duration>00:04:56</itunes:duration>
+  <itunes:subtitle>Ira Glass has news to share about some things happening here at This American Life.</itunes:subtitle>
+  <itunes:summary>Ira Glass has news to share about some things happening here at This American Life.</itunes:summary>
+  <link>https://www.thisamericanlife.org</link>
 </item>
 </channel>
 </rss>

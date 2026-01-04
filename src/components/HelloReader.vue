@@ -1,6 +1,6 @@
 <template>
   <v-app id="inspire">
-    -- <v-app-bar
+    <v-app-bar
       class="px-3"
       density="compact"
       flat
@@ -9,10 +9,11 @@
       <div>PodCastReader</div>
       <v-spacer></v-spacer>
     </v-app-bar>
-                                               
+
     <v-main class="bg-grey-lighten-3">
       <v-container>
-        <v-row>
+        <!-- 桌面端：三栏布局 -->
+        <v-row class="d-none d-md-flex">
           <v-col
             cols="12"
             md="2"
@@ -25,7 +26,6 @@
                 class="mx-auto"
                 max-width="300"
               >
-                <!-- <v-list :items="podlist"></v-list> -->
                 <v-list>
                   <v-list-item
                     title="FeedList"
@@ -59,8 +59,7 @@
                 class="mx-auto"
                 max-width="400"
               >
-                <!-- <v-list :items="itemlist"></v-list> -->
-                <v-list :max-height="480"  style="overflow-y: auto;">
+                <v-list :max-height="480" style="overflow-y: auto;">
                   <v-list-item
                     title="EpisodeList"
                   ></v-list-item>
@@ -74,7 +73,7 @@
                   >
                     <v-tooltip activator="parent" location="top">
                       <span>{{ item.title }}</span>
-                    </v-tooltip>                  
+                    </v-tooltip>
                   </v-list-item>
                 </v-list>
               </v-card>
@@ -89,7 +88,6 @@
               min-height="75vh"
               rounded="lg"
             >
-              <!--  -->
               <h2>{{ cur_item.title }}</h2>
               <p>{{ cur_item.pubdate }}</p>
               <p><span v-html="cur_item.description"></span></p>
@@ -97,15 +95,105 @@
               <h2 v-if="(subtitle.length == 0)&&(cur_item.title!=undefined)">未能找到字幕，请通过后台生成。</h2>
               <div class="container100">
                 <template v-for="sub in subtitle">
-                  <p :id="`sub${sub.start}`" >{{ sub.interval }}</p>
-                  <blockquote :id="`subtitle${sub.start}`" >{{ sub.text }}</blockquote>
+                  <p :id="`desktop-sub${sub.start}`" >{{ sub.interval }}</p>
+                  <blockquote :id="`desktop-subtitle${sub.start}`" >{{ sub.text }}</blockquote>
                 </template>
               </div>
             </v-sheet>
           </v-col>
         </v-row>
+
+        <!-- 移动端：单栏切换布局 -->
+        <div class="d-md-none">
+          <!-- Feed列表视图 -->
+          <div v-show="mobileTab === 'feeds'">
+            <v-card rounded="lg">
+              <v-list>
+                <v-list-item
+                  title="FeedList"
+                ></v-list-item>
+                <v-divider></v-divider>
+                <v-list-item
+                  v-for="item in podlist"
+                  :key="item.title"
+                  :title="item.title"
+                  :value="item.value"
+                  @click="onPodlistClick(item); mobileTab = 'episodes'"
+                >
+                </v-list-item>
+              </v-list>
+            </v-card>
+          </div>
+
+          <!-- Episode列表视图 -->
+          <div v-show="mobileTab === 'episodes'">
+            <v-card rounded="lg">
+              <v-list :max-height="calcMobileHeight()" style="overflow-y: auto;">
+                <v-list-item
+                  title="EpisodeList"
+                ></v-list-item>
+                <v-divider></v-divider>
+                <v-list-item
+                  v-for="item in itemlist"
+                  :key="item.title"
+                  :title="item.title"
+                  :value="item.value"
+                  @click="onItemlistClick(item); mobileTab = 'player'"
+                >
+                </v-list-item>
+              </v-list>
+            </v-card>
+          </div>
+
+          <!-- 播放器和字幕视图 -->
+          <div v-show="mobileTab === 'player'" class="mobile-player-container">
+            <v-sheet
+              :min-height="calcMobileHeight()"
+              rounded="lg"
+              class="pa-3"
+            >
+              <h2 class="text-h6">{{ cur_item.title }}</h2>
+              <p class="text-caption">{{ cur_item.pubdate }}</p>
+              <p class="text-body-2" v-html="cur_item.description"></p>
+              <br>
+              <h2 v-if="(subtitle.length == 0)&&(cur_item.title!=undefined)" class="text-body-1">未能找到字幕，请通过后台生成。</h2>
+              <div class="container100">
+                <template v-for="sub in subtitle">
+                  <p :id="`mobile-sub${sub.start}`" class="text-caption">{{ sub.interval }}</p>
+                  <blockquote :id="`mobile-subtitle${sub.start}`" class="text-body-2">{{ sub.text }}</blockquote>
+                </template>
+              </div>
+            </v-sheet>
+          </div>
+        </div>
       </v-container>
     </v-main>
+
+    <!-- 移动端底部导航 -->
+    <v-bottom-navigation
+      v-model="mobileTab"
+      class="d-md-none"
+      color="primary"
+      grow
+      height="56"
+    >
+      <v-btn value="feeds">
+        <v-icon>mdi-rss</v-icon>
+        <span>Feeds</span>
+      </v-btn>
+
+      <v-btn value="episodes">
+        <v-icon>mdi-playlist-play</v-icon>
+        <span>Episodes</span>
+      </v-btn>
+
+      <v-btn value="player">
+        <v-icon>mdi-play-circle</v-icon>
+        <span>Player</span>
+      </v-btn>
+    </v-bottom-navigation>
+
+    <!-- 播放器固定在底部 -->
     <v-footer
       height="120"
       app
@@ -113,9 +201,6 @@
       <div class="element-of-your-choice audioplayer">
         <p>shikwasa播放器占位</p>
       </div>
-      <!-- <audio controls ref="audioElement" @error="handleAudioError"  @timeupdate="handleTimeUpdate">
-        <source :src="audiosrc" type="audio/mpeg" >
-      </audio> -->
     </v-footer>
   </v-app>
 </template>
@@ -130,7 +215,8 @@ import {parseOPML} from '@/utils/opml'
 import { extractFromXml } from '@extractus/feed-extractor'
 import CryptoJS from 'crypto-js';
 
-import { ref,nextTick } from 'vue'
+import { ref, nextTick } from 'vue'
+import { useDisplay } from 'vuetify'
 
 //const audioElement = ref(null);
 let  audioplayer = null;
@@ -144,6 +230,9 @@ let audio_original_src = ref('')
 let subtitle = ref([])
 let current_subtitle = null
 let cur_folder = ''
+
+// 移动端底部导航状态
+const mobileTab = ref('feeds')
 
 import 'shikwasa/dist/style.css'
 import { Player } from 'shikwasa'
@@ -169,13 +258,35 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('字幕查询')
         current_subtitle = findSubtitle(subtitle.value, currentTime);
         if (current_subtitle) {
-            //滚动到对应字幕
-            //document.getElementById(`sub${currentSubtitle.start}`).scrollIntoView();
-            scrollToElementCenter(`sub${current_subtitle.start}`)
-            document.querySelectorAll('blockquote').forEach(blockquote => {
+            console.log('找到字幕:', current_subtitle);
+            console.log('字幕文本:', current_subtitle.text);
+            console.log('字幕数组长度:', subtitle.value.length);
+
+            // 检测是否是移动端，使用不同的ID前缀
+            const mobileContainer = document.querySelector('.mobile-player-container');
+            const isMobile = mobileContainer !== null && mobileContainer.offsetParent !== null;
+            const prefix = isMobile ? 'mobile-subtitle' : 'desktop-subtitle';
+
+            console.log('准备滚动到元素:', prefix + current_subtitle.start, 'isMobile:', isMobile);
+
+            // 滚动到blockquote元素（字幕文本）
+            let elementId = `${prefix}${current_subtitle.start}`;
+            let element = document.getElementById(elementId);
+            console.log('元素是否存在:', element !== null);
+            console.log('元素尺寸:', element ? element.offsetWidth + 'x' + element.offsetHeight : 'N/A');
+            console.log('元素文本内容:', element ? element.textContent.substring(0, 20) : 'N/A');
+
+            //滚动到对应字幕 - 使用nextTick确保DOM已更新
+            nextTick(() => {
+              scrollToElementCenter(elementId)
+            })
+
+            // 移除所有加粗
+            const querySelector = isMobile ? 'blockquote[id^="mobile-subtitle"]' : 'blockquote[id^="desktop-subtitle"]';
+            document.querySelectorAll(querySelector).forEach(blockquote => {
               blockquote.classList.remove('bold-text');
             })
-            document.getElementById(`subtitle${current_subtitle.start}`).classList.add('bold-text');
+            document.getElementById(elementId).classList.add('bold-text');
         } else {
             console.log('当前时间: ' + currentTime + ', 无字幕显示');
             // 在这里清除或隐藏字幕
@@ -199,7 +310,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // 初始化
 initMain()
-test()
 
 // 初始化
 function initMain(){
@@ -379,26 +489,50 @@ function scrollToElementCenter(elementId) {
   // 获取元素
   var element = document.getElementById(elementId);
 
-  // 获取元素的高度
-  var elementHeight = element.offsetHeight;
+  if (!element) {
+    console.log('元素未找到:', elementId);
+    return;
+  }
 
-  // 获取视口的高度
-  var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+  // 检测是否是移动端
+  var mobileContainer = document.querySelector('.mobile-player-container');
+  var isMobile = mobileContainer !== null && mobileContainer.offsetParent !== null;
 
-  // 计算元素到窗口顶部的距离
-  var elementTop = element.offsetTop;
+  if (isMobile) {
+    // 移动端：直接滚动window
+    var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    var elementRect = element.getBoundingClientRect();
 
-  // 计算滚动位置（使元素位于视口中央）
-  var scrollPosition = elementTop - (viewportHeight / 3) + (elementHeight / 3);
+    // 滚动到元素位置（减去视口1/3）
+    var scrollPosition = window.pageYOffset + elementRect.top - (viewportHeight / 3);
 
-  // 滚动到指定位置
-  window.scrollTo({
-    top: scrollPosition,
-    behavior: 'smooth' // 平滑滚动
-  });
+    window.scrollTo({
+      top: scrollPosition,
+      behavior: 'smooth'
+    });
+  } else {
+    // 桌面端：滚动window
+    var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    var elementTop = element.offsetTop;
+    var scrollPosition = elementTop - (viewportHeight / 3);
+
+    window.scrollTo({
+      top: scrollPosition,
+      behavior: 'smooth'
+    });
+  }
 }
 
-
+// 计算移动端内容区域高度
+function calcMobileHeight() {
+  // 视口高度 - app-bar - 底部导航 - 播放控件 - container padding
+  const viewportHeight = window.innerHeight || document.documentElement.clientHeight
+  const appBarHeight = 48 // compact app-bar height
+  const bottomNavHeight = 56 // v-bottom-nav height
+  const playerHeight = 120 // v-footer height (播放控件)
+  const padding = 24 // container padding
+  return (viewportHeight - appBarHeight - bottomNavHeight - playerHeight - padding) + 'px'
+}
 
 </script>
 
@@ -429,4 +563,31 @@ function scrollToElementCenter(elementId) {
     font-weight: bold;
   }
 
+  /* 移动端样式优化 */
+  @media (max-width: 959px) {
+    .v-container {
+      padding: 8px;
+      /* 移除 overflow-y: auto，让页面自然滚动 */
+    }
+
+    .mobile-player-container {
+      /* 移除滚动设置 */
+      min-height: calc(100vh - 48px - 56px - 120px);
+    }
+
+    blockquote {
+      padding: 8px;
+      margin: 3px 0;
+      font-size: 0.875rem;
+    }
+
+    .container100 p {
+      font-size: 0.75rem;
+    }
+
+    /* 隐藏桌面端的tooltip */
+    .v-tooltip {
+      display: none !important;
+    }
+  }
 </style>

@@ -49,22 +49,21 @@ opml_file = "../public/data/base.opml"
 mp3_download_index = 3
 ```
 
-### 环境安装
+### 依赖环境安装
 python3.10
 ```bash
-pipenv shell
-pipenv install
+pdm update
 ```
 升级包
 ```
-pipenv update openai-whisper
+pdm update openai-whisper
 ```
 
 
 ### 运行
 
 ```bash
-python main.py
+pdm run python main.py
 ```
 脚本运行后先会让选择是否更新RSS源，如果等待10秒后不选择，默认会更新。
 
