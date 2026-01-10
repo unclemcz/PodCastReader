@@ -68,8 +68,19 @@
               <h2 v-if="(subtitle.length == 0)&&(cur_item.title!=undefined)" class="text-body-1">未能找到字幕，请通过后台生成。</h2>
               <div class="container100">
                 <template v-for="sub in subtitle">
-                  <p :id="`mobile-sub${sub.start}`" class="text-caption">{{ sub.interval }}</p>
-                  <blockquote :id="`mobile-subtitle${sub.start}`" class="text-body-2">{{ sub.text }}</blockquote>
+                  <p :id="`mobile-sub${sub.start}`" class="text-caption clickable-time" @click="seekToTime(sub.start)">
+                    {{ sub.interval }}
+                  </p>
+                  <blockquote :id="`mobile-subtitle${sub.start}`" class="text-body-2">
+                    <template v-for="(word, index) in parseWords(sub.text)" :key="index">
+                      <span
+                        v-if="word.isWord"
+                        class="clickable-word"
+                        @click="lookupWord(word.text)"
+                      >{{ word.text }}</span>
+                      <span v-else>{{ word.text }}</span>
+                    </template>
+                  </blockquote>
                 </template>
               </div>
             </v-sheet>
@@ -110,6 +121,21 @@
         <p>shikwasa播放器占位</p>
       </div>
     </v-footer>
+
+    <!-- 单词查询结果 Snackbar -->
+    <v-snackbar
+      v-model="wordLookup.snackbar"
+      :timeout="5000"
+      location="top"
+      color="white"
+    >
+      <div v-html="wordLookup.content"></div>
+      <template v-slot:actions>
+        <v-btn variant="text" @click="wordLookup.snackbar = false">
+          关闭
+        </v-btn>
+      </template>
+    </v-snackbar>
   </v-app>
 </template>
 
@@ -138,9 +164,17 @@ let audio_original_src = ref('')
 let subtitle = ref([])
 let current_subtitle = null
 let cur_folder = ''
+let dict_url = 'https://www.wotiku.cn/ecdict/dict/';
 
 // 移动端底部导航状态
 const mobileTab = ref('feeds')
+
+// 单词查询状态
+const wordLookup = ref({
+  snackbar: false,
+  content: '',
+  timeout: 0, // 手动关闭
+})
 
 import 'shikwasa/dist/style.css'
 import { Player } from 'shikwasa'
@@ -420,6 +454,102 @@ function calcMobileHeight() {
   return (viewportHeight - appBarHeight - bottomNavHeight - playerHeight - padding) + 'px'
 }
 
+// 解析文本为单词和非单词部分
+function parseWords(text) {
+  // 使用正则表达式匹配单词（字母、数字、连字符、撇号）
+  const regex = /([a-zA-Z0-9'-]+)|([^a-zA-Z0-9'-]+)/g
+  const matches = []
+  let match
+
+  while ((match = regex.exec(text)) !== null) {
+    if (match[1]) {
+      // 单词部分
+      matches.push({
+        text: match[1],
+        isWord: true
+      })
+    } else if (match[2]) {
+      // 非单词部分（空格、标点等）
+      matches.push({
+        text: match[2],
+        isWord: false
+      })
+    }
+  }
+
+  return matches
+}
+
+// 查询单词
+async function lookupWord(word) {
+  const cleanWord = word.trim().toLowerCase()
+  if (!cleanWord) return
+
+  // 先关闭当前的 Snackbar
+  wordLookup.value.snackbar = false
+
+  console.log('查词:', cleanWord)
+
+  try {
+    const response = await axios.post(dict_url, {
+      word: cleanWord
+    }, {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    })
+
+    console.log('查词响应:', response.data)
+
+    if (response.data && response.data.length > 0) {
+      // 遍历所有结果
+      let content = ''
+      response.data.forEach((item, index) => {
+        if (index > 0) {
+          content += '<br>'
+        }
+
+        if (item.phonetic) {
+          content += `<div style="color: #1976D2; font-weight: bold;">${item.phonetic}</div>`
+        }
+
+        if (item.translation) {
+          content += `<div>${item.translation}</div>`
+        }
+      })
+
+      wordLookup.value.content = content || '未找到该单词'
+    } else {
+      wordLookup.value.content = '未找到该单词'
+    }
+  } catch (error) {
+    console.error('查词失败:', error)
+    wordLookup.value.content = '查词失败，请稍后重试'
+  }
+
+  console.log('Snackbar 内容:', wordLookup.value.content)
+
+  // 使用 nextTick 等待 DOM 更新，确保计时器重置
+  nextTick(() => {
+    wordLookup.value.snackbar = true
+    console.log('Snackbar 状态:', wordLookup.value.snackbar)
+  })
+}
+
+// 跳转到指定时间
+function seekToTime(time) {
+  if (audioplayer) {
+    // 尝试使用 shikwasa 的 seek 方法
+    if (typeof audioplayer.seek === 'function') {
+      audioplayer.seek(time)
+    } else {
+      console.error('audioplayer.seek 方法不存在')
+      console.log('audioplayer 可用方法:', Object.getOwnPropertyNames(Object.getPrototypeOf(audioplayer)))
+    }
+    console.log('跳转到时间:', time)
+  }
+}
+
 </script>
 
 <style>
@@ -462,10 +592,37 @@ function calcMobileHeight() {
     border-left: 5px solid #ccc;
     padding: 8px;
     margin: 3px 0;
-    font-size: 0.875rem;
+  }
+
+  blockquote.text-body-2 {
+    font-size: 1rem !important;
   }
 
   .container100 p {
     font-size: 0.75rem;
+  }
+
+  .clickable-word {
+    cursor: pointer;
+    color: #1976D2;
+    border-bottom: 1px dotted #1976D2;
+  }
+
+  .clickable-word:hover {
+    background-color: #E3F2FD;
+  }
+
+  .clickable-time {
+    cursor: pointer;
+    color: #666666;
+    transition: color 0.2s;
+  }
+
+  .clickable-time:hover {
+    color: #1976D2;
+  }
+
+  .clickable-time:active {
+    color: #0D47A1;
   }
 </style>
