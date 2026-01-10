@@ -12,99 +12,8 @@
 
     <v-main class="bg-grey-lighten-3">
       <v-container>
-        <!-- 桌面端：三栏布局 -->
-        <v-row class="d-none d-md-flex">
-          <v-col
-            cols="12"
-            md="2"
-          >
-            <v-sheet class="sticky-div"
-              min-height="268"
-              rounded="lg"
-            >
-              <v-card
-                class="mx-auto"
-                max-width="300"
-              >
-                <v-list>
-                  <v-list-item
-                    title="FeedList"
-                  ></v-list-item>
-                  <v-divider></v-divider>
-                  <v-list-item
-                    v-for="item in podlist"
-                    :key="item.title"
-                    :title="item.title"
-                    :value="item.value"
-                    @click="onPodlistClick(item)"
-                  >
-                    <v-tooltip activator="parent" location="top">
-                      <span>{{ item.title }}</span>
-                    </v-tooltip>
-                  </v-list-item>
-                </v-list>
-              </v-card>
-            </v-sheet>
-          </v-col>
-
-          <v-col
-            cols="12"
-            md="2"
-          >
-            <v-sheet class="sticky-div"
-              min-height="240"
-              rounded="lg"
-            >
-              <v-card
-                class="mx-auto"
-                max-width="400"
-              >
-                <v-list :max-height="480" style="overflow-y: auto;">
-                  <v-list-item
-                    title="EpisodeList"
-                  ></v-list-item>
-                  <v-divider></v-divider>
-                  <v-list-item
-                    v-for="item in itemlist"
-                    :key="item.title"
-                    :title="item.title"
-                    :value="item.value"
-                    @click="onItemlistClick(item)"
-                  >
-                    <v-tooltip activator="parent" location="top">
-                      <span>{{ item.title }}</span>
-                    </v-tooltip>
-                  </v-list-item>
-                </v-list>
-              </v-card>
-            </v-sheet>
-          </v-col>
-
-          <v-col
-            cols="12"
-            md="8"
-          >
-            <v-sheet
-              min-height="75vh"
-              rounded="lg"
-            >
-              <h2>{{ cur_item.title }}</h2>
-              <p>{{ cur_item.pubdate }}</p>
-              <p><span v-html="cur_item.description"></span></p>
-              <br>
-              <h2 v-if="(subtitle.length == 0)&&(cur_item.title!=undefined)">未能找到字幕，请通过后台生成。</h2>
-              <div class="container100">
-                <template v-for="sub in subtitle">
-                  <p :id="`desktop-sub${sub.start}`" >{{ sub.interval }}</p>
-                  <blockquote :id="`desktop-subtitle${sub.start}`" >{{ sub.text }}</blockquote>
-                </template>
-              </div>
-            </v-sheet>
-          </v-col>
-        </v-row>
-
         <!-- 移动端：单栏切换布局 -->
-        <div class="d-md-none">
+        <div>
           <!-- Feed列表视图 -->
           <div v-show="mobileTab === 'feeds'">
             <v-card rounded="lg">
@@ -169,10 +78,9 @@
       </v-container>
     </v-main>
 
-    <!-- 移动端底部导航 -->
+    <!-- 底部导航 -->
     <v-bottom-navigation
       v-model="mobileTab"
-      class="d-md-none"
       color="primary"
       grow
       height="56"
@@ -262,12 +170,9 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log('字幕文本:', current_subtitle.text);
             console.log('字幕数组长度:', subtitle.value.length);
 
-            // 检测是否是移动端，使用不同的ID前缀
-            const mobileContainer = document.querySelector('.mobile-player-container');
-            const isMobile = mobileContainer !== null && mobileContainer.offsetParent !== null;
-            const prefix = isMobile ? 'mobile-subtitle' : 'desktop-subtitle';
+            const prefix = 'mobile-subtitle';
 
-            console.log('准备滚动到元素:', prefix + current_subtitle.start, 'isMobile:', isMobile);
+            console.log('准备滚动到元素:', prefix + current_subtitle.start);
 
             // 滚动到blockquote元素（字幕文本）
             let elementId = `${prefix}${current_subtitle.start}`;
@@ -282,8 +187,7 @@ document.addEventListener('DOMContentLoaded', () => {
             })
 
             // 移除所有加粗
-            const querySelector = isMobile ? 'blockquote[id^="mobile-subtitle"]' : 'blockquote[id^="desktop-subtitle"]';
-            document.querySelectorAll(querySelector).forEach(blockquote => {
+            document.querySelectorAll('blockquote[id^="mobile-subtitle"]').forEach(blockquote => {
               blockquote.classList.remove('bold-text');
             })
             document.getElementById(elementId).classList.add('bold-text');
@@ -494,33 +398,15 @@ function scrollToElementCenter(elementId) {
     return;
   }
 
-  // 检测是否是移动端
-  var mobileContainer = document.querySelector('.mobile-player-container');
-  var isMobile = mobileContainer !== null && mobileContainer.offsetParent !== null;
+  // 滚动到元素位置（减去视口1/3）
+  var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+  var elementRect = element.getBoundingClientRect();
+  var scrollPosition = window.pageYOffset + elementRect.top - (viewportHeight / 3);
 
-  if (isMobile) {
-    // 移动端：直接滚动window
-    var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-    var elementRect = element.getBoundingClientRect();
-
-    // 滚动到元素位置（减去视口1/3）
-    var scrollPosition = window.pageYOffset + elementRect.top - (viewportHeight / 3);
-
-    window.scrollTo({
-      top: scrollPosition,
-      behavior: 'smooth'
-    });
-  } else {
-    // 桌面端：滚动window
-    var viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-    var elementTop = element.offsetTop;
-    var scrollPosition = elementTop - (viewportHeight / 3);
-
-    window.scrollTo({
-      top: scrollPosition,
-      behavior: 'smooth'
-    });
-  }
+  window.scrollTo({
+    top: scrollPosition,
+    behavior: 'smooth'
+  });
 }
 
 // 计算移动端内容区域高度
@@ -563,31 +449,23 @@ function calcMobileHeight() {
     font-weight: bold;
   }
 
-  /* 移动端样式优化 */
-  @media (max-width: 959px) {
-    .v-container {
-      padding: 8px;
-      /* 移除 overflow-y: auto，让页面自然滚动 */
-    }
+  .v-container {
+    padding: 8px;
+  }
 
-    .mobile-player-container {
-      /* 移除滚动设置 */
-      min-height: calc(100vh - 48px - 56px - 120px);
-    }
+  .mobile-player-container {
+    min-height: calc(100vh - 48px - 56px - 120px);
+  }
 
-    blockquote {
-      padding: 8px;
-      margin: 3px 0;
-      font-size: 0.875rem;
-    }
+  blockquote {
+    background: #f9f9f9;
+    border-left: 5px solid #ccc;
+    padding: 8px;
+    margin: 3px 0;
+    font-size: 0.875rem;
+  }
 
-    .container100 p {
-      font-size: 0.75rem;
-    }
-
-    /* 隐藏桌面端的tooltip */
-    .v-tooltip {
-      display: none !important;
-    }
+  .container100 p {
+    font-size: 0.75rem;
   }
 </style>
