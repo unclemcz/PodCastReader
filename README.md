@@ -11,6 +11,7 @@
 ### 配置查词功能后
  ![demowithdict](./readme/demowithdict.png)
 
+查词接口使用[ecdict-api](https://github.com/unclemcz/ecdict-api)，请参考项目说明自行搭建。
 ## 前端
 ### 📦 安装
 
