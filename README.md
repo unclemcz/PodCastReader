@@ -3,15 +3,10 @@
 
 ## 截图
 
-### 移动端
+### 效果
 ![demo](./readme/demo2.png)
 ### 配合沉浸式翻译使用
  ![demowithm](./readme/demowithm.png)
-
-### 电脑端
-![demo](./readme/demo.gif)
-### 配合kiss-translator使用
-![demowithkiss](./readme/demowithkiss.gif)
 
 
 
