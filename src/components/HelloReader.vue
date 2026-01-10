@@ -8,6 +8,9 @@
       <v-spacer></v-spacer>
       <div>PodCastReader</div>
       <v-spacer></v-spacer>
+      <v-btn icon @click="settingsDialog = true">
+        <v-icon>mdi-cog</v-icon>
+      </v-btn>
     </v-app-bar>
 
     <v-main class="bg-grey-lighten-3">
@@ -136,6 +139,26 @@
         </v-btn>
       </template>
     </v-snackbar>
+
+    <!-- 设置对话框 -->
+    <v-dialog v-model="settingsDialog" max-width="500">
+      <v-card>
+        <v-card-title>设置</v-card-title>
+        <v-card-text>
+          <v-text-field
+            v-model="settings.dictUrl"
+            label="查词接口地址"
+            hint="请输入查词API的完整URL"
+            persistent-hint
+          ></v-text-field>
+        </v-card-text>
+        <v-card-actions>
+          <v-spacer></v-spacer>
+          <v-btn text @click="settingsDialog = false">取消</v-btn>
+          <v-btn text color="primary" @click="saveSettings">保存</v-btn>
+        </v-card-actions>
+      </v-card>
+    </v-dialog>
   </v-app>
 </template>
 
@@ -164,10 +187,17 @@ let audio_original_src = ref('')
 let subtitle = ref([])
 let current_subtitle = null
 let cur_folder = ''
-let dict_url = 'https://www.wotiku.cn/ecdict/dict/';
 
 // 移动端底部导航状态
 const mobileTab = ref('feeds')
+
+// 设置对话框状态
+const settingsDialog = ref(false)
+
+// 设置项
+const settings = ref({
+  dictUrl: 'https://'
+})
 
 // 单词查询状态
 const wordLookup = ref({
@@ -248,6 +278,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // 初始化
 initMain()
+
+// 加载设置
+function loadSettings() {
+  const saved = localStorage.getItem('podcastReaderSettings')
+  if (saved) {
+    try {
+      const parsed = JSON.parse(saved)
+      settings.value = { ...settings.value, ...parsed }
+    } catch (e) {
+      console.error('加载设置失败:', e)
+    }
+  }
+}
+
+// 保存设置
+function saveSettings() {
+  localStorage.setItem('podcastReaderSettings', JSON.stringify(settings.value))
+  settingsDialog.value = false
+}
+
+// 加载设置
+loadSettings()
 
 // 初始化
 function initMain(){
@@ -485,13 +537,20 @@ async function lookupWord(word) {
   const cleanWord = word.trim().toLowerCase()
   if (!cleanWord) return
 
+  // 检查是否配置了查词API
+  if (!settings.value.dictUrl || settings.value.dictUrl === 'https://') {
+    wordLookup.value.content = '请先在设置中配置查词API地址'
+    wordLookup.value.snackbar = true
+    return
+  }
+
   // 先关闭当前的 Snackbar
   wordLookup.value.snackbar = false
 
   console.log('查词:', cleanWord)
 
   try {
-    const response = await axios.post(dict_url, {
+    const response = await axios.post(settings.value.dictUrl, {
       word: cleanWord
     }, {
       headers: {
