@@ -8,7 +8,8 @@
 ### 配合沉浸式翻译使用
  ![demowithm](./readme/demowithm.png)
 
-
+### 配置查词功能后
+ ![demowithdict](./readme/demowithdict.png)
 
 ## 前端
 ### 📦 安装
